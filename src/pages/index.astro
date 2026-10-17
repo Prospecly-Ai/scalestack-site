@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import UseCaseCard from '../components/UseCaseCard.astro';
+import { loadUseCases, useCasesUpdated, prettyDate, USE_CASE_CATEGORIES } from '../lib/data';
+const all = loadUseCases();
+const updated = useCasesUpdated(all);
+const catCount = (slug: string) => all.filter((u) => u.catSlug === slug).length;
+const toolCounts = new Map<string, { n: number; toolId: string | null }>();
+for (const u of all) for (const t of u.tools) {
+  const e = toolCounts.get(t.name) ?? { n: 0, toolId: t.toolId };
+  e.n++; toolCounts.set(t.name, e);
+}
+const toolList = [...toolCounts.entries()].sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0]));
+---
+<Base title="ScaleStack Tech: real AI use cases for businesses, with public sources" description="A feed of real ways businesses use AI in sales, marketing, operations, support and CRM. Each card links to the public page where it was reported and is summarised in our own words.">
+  <h1>Real AI use cases for businesses, each with its public source.</h1>
+  <p class="lede">Every card summarises, in our own words, a page that a company or vendor has published about how it uses AI. We read the page and link it. We have not run these setups ourselves, and results quoted by sources are left out.</p>
+  <p class="stamp"><span id="feed-count">{all.length}</span> use cases · Updated {prettyDate(updated)} · <a href="/methodology/#use-cases">How we pick use cases</a> · <a href="/rss.xml">RSS feed</a></p>
+
+  <div class="search" role="search">
+    <label for="q" class="vh">Search use cases by title, summary or tool</label>
+    <input id="q" type="search" placeholder="Search use cases by title, summary or tool" autocomplete="off" />
+    <p id="search-status" class="src" aria-live="polite"></p>
+    <ul id="search-results" class="cards"></ul>
+  </div>
+
+  <h2>Categories</h2>
+  <ul class="chips" id="cat-chips" aria-label="Filter by category">
+    <li><a href="/" class="chip" data-cat="" aria-current="true">All <span class="count">{all.length}</span></a></li>
+    {USE_CASE_CATEGORIES.map((c) => <li><a href={`/use-cases/${c.slug}/`} class="chip" data-cat={c.slug}>{c.name} <span class="count">{catCount(c.slug)}</span></a></li>)}
+  </ul>
+
+  <h2>Browse by tool</h2>
+  <ul class="chips" id="tool-chips" aria-label="Filter by tool">
+    {toolList.map(([name, e]) => <li><button type="button" class="chip" data-tool={name.toLowerCase()}>{name} <span class="count">{e.n}</span></button></li>)}
+  </ul>
+  <p class="src">Ten AI video makers also have <a href="/tools/">their own pages</a>; their names above link there from each card.</p>
+
+  <h2>Latest from public sources</h2>
+  <p id="feed-empty" class="note" hidden>No use case matches that filter.</p>
+  <ul class="feed" id="feed">
+    {all.map((u) => <UseCaseCard uc={u} />)}
+  </ul>
+
+  <aside class="agency" aria-label="About Prospecly">
+    <h2>Work with Prospecly, ScaleStack's own agency</h2>
+    <p><a href="/services/">Prospecly services</a></p>
+    <p><strong>Not part of the use case feed or the rankings.</strong></p>
+  </aside>
+
+  <h2>AI video maker rankings</h2>
+  <p>Looking for video tools? See the <a href="/rankings/">rankings</a> (draft) or the <a href="/tools/">ten tool pages</a>, each field linked to the vendor page we read.</p>
+  <script is:inline src="/search.js" defer></script>
+  <script is:inline src="/feed.js" defer></script>
+</Base>

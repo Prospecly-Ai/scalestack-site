@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+interface Props { title: string; description: string; noindex?: boolean; nocanonical?: boolean; }
+const { title, description, noindex = false, nocanonical = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/methodology/', label: 'Methodology' },
+  { href: '/rankings/', label: 'Rankings' },
+  { href: '/tools/', label: 'Tools' },
+  { href: '/services/', label: 'Services' },
+];
+const current = (h: string) => (h === '/' ? path === '/' : path.startsWith(h));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {!nocanonical && <link rel="canonical" href={canonical} />}
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link rel="alternate" type="application/rss+xml" title="ScaleStack Tech: AI use cases and AI video maker records" href="/rss.xml" />
+    <script is:inline>
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'dark' && t !== 'light') t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href="/">Scale<span>Stack</span> Tech</a>
+        <nav aria-label="Main">
+          <ul>
+            {nav.map((n) => <li><a href={n.href} aria-current={current(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
+            <li><a href="/rss.xml">RSS</a></li>
+            <li><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrap"><slot /></div>
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        <p>Contact and corrections: <a href="mailto:hello@scalestacktech.co">hello@scalestacktech.co</a></p>
+        <p><a href="/services/">Work with Prospecly, ScaleStack's own agency</a></p>
+        <p><a href="/methodology/">Methodology</a> · <a href="/rankings/">Rankings</a> · <a href="/tools/">Tools</a> · <a href="/services/">Services</a> · <a href="/rss.xml">RSS feed</a></p>
+      </div>
+    </footer>
+    <script is:inline src="/theme.js" defer></script>
+  </body>
+</html>

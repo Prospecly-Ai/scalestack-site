@@ -1,0 +1,14 @@
+---
+interface Props { card: { id: string; name: string; summary: string; scoreText: string; checked: string; sourceUrl: string; sourceDate: string; lastChecked: string; status: string; added: string } }
+const { card } = Astro.props;
+---
+<li class="card" data-name={card.name.toLowerCase()} data-summary={card.summary.toLowerCase()}>
+  <h3><a href={`/tools/${card.id}/`}>{card.name}</a></h3>
+  <p class="sum">{card.summary}</p>
+  <p class="meta">
+    <span class="tag red">{card.status}</span>
+    <span class={card.scoreText === 'Score pending' ? 'tag' : 'tag red'}>{card.scoreText}</span>
+  </p>
+  {card.checked && <p class="src">{card.checked}</p>}
+  <p class="src">Source: <a href={card.sourceUrl} rel="nofollow noopener">{card.sourceUrl}</a> (retrieved {card.sourceDate})<br />Last checked {card.lastChecked}</p>
+</li>

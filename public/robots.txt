@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scalestacktech.co/sitemap-index.xml

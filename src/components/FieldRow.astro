@@ -1,0 +1,31 @@
+---
+import { show, money } from '../lib/data';
+interface Props { label: string; field: string; tool: Record<string, string>; evidence: Record<string, string>[]; kind?: 'text' | 'money' | 'link'; suffix?: string; }
+const { label, field, tool, evidence, kind = 'text', suffix = '' } = Astro.props;
+const value = tool[field] ?? '';
+const url = tool[`${field}_source_url`];
+const date = tool[`${field}_retrieved_date`];
+const quotes = evidence.filter((e) => e.tool_id === tool.tool_id && e.field === field);
+const unverified = value === 'UNVERIFIED';
+const rendered = kind === 'money' ? money(value) : show(value);
+---
+<tr>
+  <th scope="row">{label}</th>
+  <td>
+    {unverified
+      ? <span class="unv">UNVERIFIED</span>
+      : kind === 'link'
+        ? <a href={value} rel="nofollow noopener">{value}</a>
+        : <span>{rendered}{suffix}</span>}
+    {quotes.length > 0 && (
+      <details>
+        <summary>Evidence recorded ({quotes.length})</summary>
+        <ul>{quotes.map((q) => <li>"{q.evidence_snippet}"</li>)}</ul>
+      </details>
+    )}
+  </td>
+  <td class="src">
+    {url && <a href={url} rel="nofollow noopener">{url}</a>}
+    {date && <><br />Retrieved {date}</>}
+  </td>
+</tr>

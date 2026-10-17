@@ -1,0 +1,22 @@
+{
+  "name": "scalestack-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ScaleStack Tech: AI video makers ranked from what vendors publish. Static Astro site.",
+  "engines": { "node": ">=20.3.0" },
+  "scripts": {
+    "dev": "astro dev",
+    "score": "python3 scripts/score.py",
+    "score:check": "python3 scripts/score.py --check",
+    "build": "astro build",
+    "preview": "astro preview",
+    "linkcheck": "node scripts/linkcheck.mjs",
+    "services:check": "python3 scripts/check_services.py",
+    "usecases:check": "python3 scripts/check_use_cases.py"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.14.0"
+  }
+}

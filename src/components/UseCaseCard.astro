@@ -1,0 +1,14 @@
+---
+import { shownDate, type UseCase } from '../lib/data';
+interface Props { uc: UseCase }
+const { uc } = Astro.props;
+const text = `${uc.title} ${uc.summary} ${uc.tools.map((t) => t.name).join(' ')}`.toLowerCase();
+---
+<li class="uc" id={`uc-${uc.id}`} data-id={uc.id} data-cat={uc.catSlug} data-tools={uc.tools.map((t) => t.name.toLowerCase()).join('|')} data-text={text}>
+  <p class="uc-cat"><a href={`/use-cases/${uc.catSlug}/`}>{uc.category}</a></p>
+  <h3>{uc.title}</h3>
+  <p class="sum">{uc.summary}</p>
+  <p class="uc-tools"><strong>Tools:</strong> {uc.tools.map((t, i) => (<>{i > 0 && ', '}{t.toolId ? <a href={`/tools/${t.toolId}/`}>{t.name}</a> : <span>{t.name}</span>}</>))}</p>
+  <p class="src">Reported by <a href={uc.sourceUrl} rel="nofollow noopener">{uc.sourceName}, {shownDate(uc.sourceDate)}</a>. Read {uc.fetched}.</p>
+  <p class="uc-cta">Want this built for your business? <a href="/services/">Prospecly, ScaleStack's own agency.</a></p>
+</li>

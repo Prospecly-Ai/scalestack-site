@@ -1,0 +1,61 @@
+tool_id,criterion,score,evidence_url,evidence_quote
+fliki,output_quality,0,,UNVERIFIED: not yet checked
+fliki,price_value,0,,UNVERIFIED: not yet checked
+fliki,ease_of_use,0,,UNVERIFIED: not yet checked
+fliki,free_tier,3,https://fliki.ai/pricing,Includes Fliki watermark
+fliki,fit,0,,UNVERIFIED: not yet checked
+fliki,update_pace,0,,UNVERIFIED: not yet checked
+invideo-ai,output_quality,0,,UNVERIFIED: not yet checked
+invideo-ai,price_value,0,,UNVERIFIED: not yet checked
+invideo-ai,ease_of_use,0,,UNVERIFIED: not yet checked
+invideo-ai,free_tier,0,,UNVERIFIED: not yet checked
+invideo-ai,fit,0,,UNVERIFIED: not yet checked
+invideo-ai,update_pace,0,,UNVERIFIED: not yet checked
+veed,output_quality,0,,UNVERIFIED: not yet checked
+veed,price_value,0,,UNVERIFIED: not yet checked
+veed,ease_of_use,0,,UNVERIFIED: not yet checked
+veed,free_tier,0,,UNVERIFIED: not yet checked
+veed,fit,0,,UNVERIFIED: not yet checked
+veed,update_pace,0,,UNVERIFIED: not yet checked
+kapwing,output_quality,0,,UNVERIFIED: not yet checked
+kapwing,price_value,0,,UNVERIFIED: not yet checked
+kapwing,ease_of_use,0,,UNVERIFIED: not yet checked
+kapwing,free_tier,3,https://www.kapwing.com/pricing,Unlimited exports with a watermark
+kapwing,fit,0,,UNVERIFIED: not yet checked
+kapwing,update_pace,0,,UNVERIFIED: not yet checked
+descript,output_quality,0,,UNVERIFIED: not yet checked
+descript,price_value,0,,UNVERIFIED: not yet checked
+descript,ease_of_use,0,,UNVERIFIED: not yet checked
+descript,free_tier,0,,UNVERIFIED: not yet checked
+descript,fit,0,,UNVERIFIED: not yet checked
+descript,update_pace,0,,UNVERIFIED: not yet checked
+heygen,output_quality,0,,UNVERIFIED: not yet checked
+heygen,price_value,0,,UNVERIFIED: not yet checked
+heygen,ease_of_use,0,,UNVERIFIED: not yet checked
+heygen,free_tier,3,https://www.heygen.com/pricing,Videos up to 1 min
+heygen,fit,0,,UNVERIFIED: not yet checked
+heygen,update_pace,0,,UNVERIFIED: not yet checked
+synthesia,output_quality,0,,UNVERIFIED: not yet checked
+synthesia,price_value,0,,UNVERIFIED: not yet checked
+synthesia,ease_of_use,0,,UNVERIFIED: not yet checked
+synthesia,free_tier,3,https://www.synthesia.io/pricing,Videos carry a Synthesia watermark
+synthesia,fit,0,,UNVERIFIED: not yet checked
+synthesia,update_pace,0,,UNVERIFIED: not yet checked
+pictory,output_quality,0,,UNVERIFIED: not yet checked
+pictory,price_value,0,,UNVERIFIED: not yet checked
+pictory,ease_of_use,0,,UNVERIFIED: not yet checked
+pictory,free_tier,3,https://pictory.ai/pricing/,"With our free trial, you can create 3 video projects"
+pictory,fit,0,,UNVERIFIED: not yet checked
+pictory,update_pace,0,,UNVERIFIED: not yet checked
+opusclip,output_quality,0,,UNVERIFIED: not yet checked
+opusclip,price_value,0,,UNVERIFIED: not yet checked
+opusclip,ease_of_use,0,,UNVERIFIED: not yet checked
+opusclip,free_tier,3,https://www.opus.pro/pricing,Has watermark
+opusclip,fit,0,,UNVERIFIED: not yet checked
+opusclip,update_pace,0,,UNVERIFIED: not yet checked
+zebracat,output_quality,0,,UNVERIFIED: not yet checked
+zebracat,price_value,0,,UNVERIFIED: not yet checked
+zebracat,ease_of_use,0,,UNVERIFIED: not yet checked
+zebracat,free_tier,3,https://www.zebracat.ai/pricing,maximum length of 30 seconds per video
+zebracat,fit,0,,UNVERIFIED: not yet checked
+zebracat,update_pace,0,,UNVERIFIED: not yet checked

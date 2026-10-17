@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadRanking, loadCategories } from '../../lib/data';
+const r = loadRanking();
+const cats = loadCategories();
+---
+<Base title="Rankings | ScaleStack Tech" description="ScaleStack rankings are computed from published rubric scores only. The AI video makers ranking is a draft until every score is checked." noindex={!r.complete}>
+  <h1>Rankings</h1>
+  <p class="lede">Rankings are computed from rubric scores only, using what vendors publish. Order is by total score, and ties are listed alphabetically. Read the <a href="/methodology/">methodology</a> first.</p>
+  <h2>Categories</h2>
+  <ul class="cat-list">
+    {cats.map((c: any) => c.status === 'live'
+      ? <li><span><a href={c.href}>{c.name}</a> {!r.complete && <span class="tag red">Draft</span>}</span><span class="count">{r.tools.length}</span></li>
+      : <li class="soon"><span>{c.name} <em>(coming soon)</em></span><span class="count">0</span></li>)}
+  </ul>
+  <p class="src">AI video makers: {r.total_checked} of {r.total_cells} scores checked.</p>
+  {!r.complete && (
+    <div class="flag" role="note">
+      <strong class="big">DRAFT - not ready to publish: scores incomplete</strong>
+      Most criteria are still UNVERIFIED and score 0. Do not read the order as a recommendation yet.
+    </div>
+  )}
+</Base>

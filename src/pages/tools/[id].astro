@@ -1,0 +1,94 @@
+---
+import Base from '../../layouts/Base.astro';
+import FieldRow from '../../components/FieldRow.astro';
+import { loadTools, loadEvidence, isTrue, money, show } from '../../lib/data';
+
+export function getStaticPaths() {
+  const tools = loadTools();
+  const evidence = loadEvidence();
+  return tools.map((tool) => ({ params: { id: tool.tool_id }, props: { tool, evidence } }));
+}
+const { tool, evidence } = Astro.props as { tool: Record<string, string>; evidence: Record<string, string>[] };
+const verified = isTrue(tool.price_live_verified);
+const priceDate = tool.starting_price_usd_retrieved_date;
+
+const shown = [
+  'canonical_url', 'primary_job', 'description', 'starting_price_plan', 'starting_price_usd', 'starting_price_billing', 'price_unit',
+  'starting_price_alt_usd', 'starting_price_alt_billing', 'free_plan', 'free_plan_limits', 'free_plan_watermark', 'paid_watermark_free',
+  'credit_system', 'commercial_use_paid', 'commercial_use_free', 'terms_url', 'terms_date_shown',
+];
+const unverifiedCount = shown.filter((f) => tool[f] === 'UNVERIFIED').length;
+const name = tool.tool_name;
+const altPerMonth = tool.starting_price_alt_usd;
+---
+<Base title={`${name}: price, free plan and terms, Desk-researched | ScaleStack Tech`} description={`${name} pricing, free plan and commercial-use terms as published by the vendor, with source links. Desk-researched, last checked ${tool.last_checked}.`}>
+  <p><a href="/tools/">All tools</a></p>
+  <h1>{name}</h1>
+  <p class="lede"><span class="tag red">{tool.test_status}</span><span class="tag">Last checked {tool.last_checked}</span></p>
+  <p>{name} is {tool.primary_job === 'UNVERIFIED' ? 'an AI video tool' : `listed here as: ${tool.primary_job}`}. These are the vendor's published words, not our results. We have not run this tool. {unverifiedCount} of {shown.length} fields below are <strong>UNVERIFIED</strong>.</p>
+  <p><a href={tool.canonical_url} rel="nofollow noopener">Visit {name}'s site</a> (plain link, no tracking).</p>
+
+  <h2>Price</h2>
+  <div class="banner">Price as read on {priceDate}; re-verify before buying.</div>
+  {!verified && (
+    <div class="flag" role="note">
+      <strong class="big">PRICE PENDING LIVE RE-CHECK</strong>
+      Prices on this page are being re-verified. The figures below are what the vendor's page showed on {priceDate}. They are not confirmed.
+    </div>
+  )}
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Field</th><th>{verified ? 'Value' : 'Value as read (not confirmed)'}</th><th>Source and date</th></tr></thead>
+      <tbody>
+        <FieldRow label="Cheapest paid plan" field="starting_price_plan" tool={tool} evidence={evidence} />
+        <FieldRow label="Price, billed monthly (USD)" field="starting_price_usd" tool={tool} evidence={evidence} kind="money" />
+        <FieldRow label="Billing for that price" field="starting_price_billing" tool={tool} evidence={evidence} />
+        <FieldRow label="Price unit" field="price_unit" tool={tool} evidence={evidence} />
+        <FieldRow label="Price, billed annually (USD per month)" field="starting_price_alt_usd" tool={tool} evidence={evidence} kind="money" />
+        <FieldRow label="Billing for the annual price" field="starting_price_alt_billing" tool={tool} evidence={evidence} />
+        <FieldRow label="Credit system" field="credit_system" tool={tool} evidence={evidence} />
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Free plan</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Field</th><th>Value</th><th>Source and date</th></tr></thead>
+      <tbody>
+        <FieldRow label="Free plan" field="free_plan" tool={tool} evidence={evidence} />
+        <FieldRow label="Free plan limits" field="free_plan_limits" tool={tool} evidence={evidence} />
+        <FieldRow label="Watermark on free exports" field="free_plan_watermark" tool={tool} evidence={evidence} />
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Paid plan rights and terms</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Field</th><th>Value</th><th>Source and date</th></tr></thead>
+      <tbody>
+        <FieldRow label="No watermark on paid plans" field="paid_watermark_free" tool={tool} evidence={evidence} />
+        <FieldRow label="Commercial use, paid plans" field="commercial_use_paid" tool={tool} evidence={evidence} />
+        <FieldRow label="Commercial use, free plan" field="commercial_use_free" tool={tool} evidence={evidence} />
+        <FieldRow label="Terms page" field="terms_url" tool={tool} evidence={evidence} kind="link" />
+        <FieldRow label="Date shown on terms" field="terms_date_shown" tool={tool} evidence={evidence} />
+      </tbody>
+    </table>
+  </div>
+
+  <h2>About the tool</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Field</th><th>Value</th><th>Source and date</th></tr></thead>
+      <tbody>
+        <FieldRow label="Primary job" field="primary_job" tool={tool} evidence={evidence} />
+        <FieldRow label="Vendor description" field="description" tool={tool} evidence={evidence} />
+        <FieldRow label="Vendor site" field="canonical_url" tool={tool} evidence={evidence} kind="link" />
+      </tbody>
+    </table>
+  </div>
+
+  <h2>How this page was made</h2>
+  <p>Each row links to the page we read and the date we retrieved it. "Evidence recorded" shows the text we noted from that page. Read <a href="/methodology/">the methodology</a> for what UNVERIFIED means. See where {name} stands in the <a href="/rankings/ai-video-makers/">AI video makers ranking</a> (draft). To report a mistake, email <a href="mailto:hello@scalestacktech.co">hello@scalestacktech.co</a>.</p>
+</Base>

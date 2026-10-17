@@ -1,0 +1,78 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { loadRanking } from '../../../lib/data';
+const r = loadRanking();
+const crit = r.criteria;
+const needs = r.tools.filter((t: any) => t.needs.length > 0);
+---
+<Base title="AI video makers ranking (draft) | ScaleStack Tech" description="Draft ranking of 10 AI video makers from vendor-published pages. Scores are incomplete, so this page is marked DRAFT. Order is by total score, ties alphabetical." noindex={!r.complete}>
+  <h1>AI video makers ranking</h1>
+  {!r.complete && (
+    <div class="flag" role="note">
+      <strong class="big">DRAFT - not ready to publish: scores incomplete</strong>
+      Only {r.total_checked} of {r.total_cells} criterion scores are checked against a source page. Every other score is 0 and marked UNVERIFIED. Do not read this order as a recommendation.
+    </div>
+  )}
+  <p class="lede"><span class="tag red">Desk-researched</span> Scores come from vendor-published pages, not from our own tests. Method and anchors: <a href="/methodology/">methodology</a>. Order is by total score only; tools with equal totals share a rank and are listed alphabetically.</p>
+
+  <h2>Current order</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th><th>Tool</th><th>Total (of 100)</th><th>Criteria checked</th>
+          {crit.map((c: any) => <th>{c.name} ({c.weight})</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {r.tools.map((t: any) => (
+          <tr>
+            <td class="num">{t.rank}</td>
+            <td><a href={`/tools/${t.tool_id}/`}>{t.tool_name}</a></td>
+            <td class="num">{t.total_display}</td>
+            <td class="num">{t.checked_count} of {t.criteria_count}</td>
+            {t.criteria.map((c: any) => (
+              <td>
+                {c.checked
+                  ? <>{c.score}<br /><span class="src"><a href={c.evidence_url} rel="nofollow noopener">source</a>: "{c.evidence_quote}"</span></>
+                  : <span class="unv">UNVERIFIED</span>}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="src">Score per criterion is 0, 3 or 5. Points = score ÷ 5 × weight. "UNVERIFIED" scores 0.</p>
+
+  <h2>What still needs checking</h2>
+  <p>These criteria are UNVERIFIED for each tool. The pages named are the ones to read. A help center, product page or changelog address that we have not yet located is shown as "address not yet located".</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Tool</th><th>Criterion</th><th>Source pages to check</th></tr></thead>
+      <tbody>
+        {needs.map((t: any) => t.needs.map((n: any) => (
+          <tr>
+            <td><a href={`/tools/${t.tool_id}/`}>{t.tool_name}</a></td>
+            <td>{n.name}</td>
+            <td>
+              <ul class="plain" style="margin:0">
+                {n.pages.map((p: any) => (
+                  <li>{p.url ? <>{p.kind}: <a href={p.url} rel="nofollow noopener">{p.url}</a></> : <>{p.kind}: address not yet located</>}</li>
+                ))}
+              </ul>
+            </td>
+          </tr>
+        )))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Why the checked scores are what they are</h2>
+  <ul class="plain">
+    <li><strong>Free tier</strong> is scored 3 only where a vendor page states a free plan or trial and also states a watermark or a small cap on length or credits. No tool's pages say its free exports have no watermark, so none scores 5.</li>
+    <li><strong>Price and value</strong> stays 0 for every tool: the 3 anchor needs the price, the billing period and the limit that the price buys, and we have not recorded the limit. Prices are also being re-verified.</li>
+    <li><strong>Update pace</strong> needs a dated changelog entry, which we have not recorded for any tool.</li>
+    <li><strong>Output quality, Ease of use and Fit</strong> need help center, product or terms pages that we have not yet read for this purpose.</li>
+  </ul>
+</Base>

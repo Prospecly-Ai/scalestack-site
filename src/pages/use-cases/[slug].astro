@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import UseCaseCard from '../../components/UseCaseCard.astro';
+import { loadUseCases, useCasesUpdated, prettyDate, USE_CASE_CATEGORIES } from '../../lib/data';
+export function getStaticPaths() {
+  return USE_CASE_CATEGORIES.map((c) => ({ params: { slug: c.slug }, props: { cat: c } }));
+}
+const { cat } = Astro.props;
+const all = loadUseCases();
+const list = all.filter((u) => u.catSlug === cat.slug);
+---
+<Base title={`${cat.name}: real AI use cases | ScaleStack Tech`} description={`${list.length} real AI use cases in ${cat.name}, each summarised in our own words with a link to the public page where it was reported.`}>
+  <h1>{cat.name}</h1>
+  <p class="lede">{list.length} use cases, newest source date first. Each links to the public page where it was reported.</p>
+  <p class="stamp">Updated {prettyDate(useCasesUpdated(all))} · <a href="/">All use cases</a> · <a href="/methodology/#use-cases">How we pick use cases</a></p>
+  <ul class="chips" aria-label="Other categories">
+    {USE_CASE_CATEGORIES.map((c) => <li><a class="chip" href={`/use-cases/${c.slug}/`} aria-current={c.slug === cat.slug ? 'true' : undefined}>{c.name} <span class="count">{all.filter((u) => u.catSlug === c.slug).length}</span></a></li>)}
+  </ul>
+  <ul class="feed">
+    {list.map((u) => <UseCaseCard uc={u} />)}
+  </ul>
+</Base>

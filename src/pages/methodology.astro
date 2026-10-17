@@ -1,0 +1,105 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadRubric } from '../lib/data';
+const rubric = loadRubric();
+---
+<Base title="Methodology: how ScaleStack ranks AI video makers" description="How ScaleStack scores AI video makers: Desk-researched sources, six weighted criteria, 0/3/5 anchors, UNVERIFIED scores 0, and money never changes rank.">
+  <h1>How ScaleStack ranks AI video makers</h1>
+  <p class="lede">We score each tool from public vendor pages only, on six criteria, using 0, 3 or 5 points per criterion. Nothing else enters the calculation. This page is the full method for the AI video makers category ({rubric.version}).</p>
+
+  <h2>What "Desk-researched" means</h2>
+  <ul class="plain">
+    <li>We read public pages: the official pricing page, product pages, documentation, terms, changelog and public marketplace listings.</li>
+    <li>We write down what those pages say on the date shown. We do not create accounts or run the tools. Every page carries the label <strong>Desk-researched</strong>. We will not use the word "Tested" until a person or agent has run a real job through a tool and kept the notes.</li>
+    <li>Claims about output quality and reliability come from published specs and documents. Each page says these are the vendor's published claims, not our results.</li>
+    <li>Every record shows <strong>last checked</strong> (the date we read the page) and the <strong>source</strong> (the URL). The last checked date changes only when we re-read the source.</li>
+  </ul>
+
+  <h2>Category</h2>
+  <p>AI video makers: software that makes a finished video from a script, prompt, images or uploaded footage. Pure editors, screen recorders and done-for-you video services are out of scope unless we say otherwise on the ranking page.</p>
+
+  <h2>Scoring math</h2>
+  <ol>
+    <li>Each criterion has a weight. The weights add up to 100.</li>
+    <li>For each criterion a tool scores <strong>0, 3 or 5</strong>. We pick the highest anchor the public evidence fully meets. If the evidence does not fully meet the 3 anchor, the score is 0. There are no other scores.</li>
+    <li>Criterion points = score ÷ 5 × weight. Tool total = sum of criterion points, out of 100.</li>
+    <li>Rank by total, highest first, using unrounded totals. Totals display to one decimal place. Tools with equal totals share a rank and are listed in alphabetical order.</li>
+    <li>Nothing else enters the calculation.</li>
+  </ol>
+
+  <h2>Criteria, weights and anchors</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Criterion</th><th>Weight</th><th>0 points</th><th>3 points</th><th>5 points</th><th>Where to check</th></tr></thead>
+      <tbody>
+        {rubric.criteria.map((c: any) => (
+          <tr>
+            <td><strong>{c.name}</strong></td>
+            <td class="num">{c.weight}</td>
+            <td>{c.anchors['0']}</td>
+            <td>{c.anchors['3']}</td>
+            <td>{c.anchors['5']}</td>
+            <td>{c.where}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p>Weight total: {rubric.criteria.map((c: any) => c.weight).join(' + ')} = <strong>{rubric.criteria.reduce((a: number, c: any) => a + c.weight, 0)}</strong>.</p>
+
+  <h3>The four fit features</h3>
+  <p>The use case for "Fit" is turning phone footage or a script into short social or ad videos for a local service business. The four features are:</p>
+  <ol>
+    {rubric.fit_features.map((f: string) => <li>{f}</li>)}
+  </ol>
+
+  <h2>The UNVERIFIED rule</h2>
+  <ul class="plain">
+    <li>If a criterion cannot be checked from a public page on the check date, it scores <strong>0</strong> and the page shows <strong>UNVERIFIED</strong> next to it.</li>
+    <li>A page behind a login, a form, a "contact sales" wall or a call booking does not count as public.</li>
+    <li>If a source disappears or changes and we have not re-read it, the field goes back to UNVERIFIED. We do not keep an old claim.</li>
+    <li>Tool pages count the UNVERIFIED fields. Ranking pages show how many criteria are checked for each tool.</li>
+  </ul>
+
+  <h2>Money never changes rank</h2>
+  <ul class="plain">
+    <li>Rank is computed only from the rubric scores.</li>
+    <li>Rankings are never ordered by payout, price paid to us, or who asked us to list a tool.</li>
+    <li>Commission data is never used for ranking. The scoring script reads only the public tool data and the score sheet.</li>
+    <li>This site has no affiliate or sponsored links at launch. Links to vendor sites are plain links with no tracking.</li>
+  </ul>
+
+  <h2>What we do not score</h2>
+  <ul class="plain">
+    <li>Our own results or opinions of output. We have not generated videos, so the label stays Desk-researched.</li>
+    <li>Sample video galleries and customer success claims.</li>
+    <li>Payments, sponsorships, or whether a vendor has contacted us.</li>
+    <li>Third-party star ratings. We may cite counts with source and date, unscored.</li>
+    <li>Brand size, funding or social following.</li>
+    <li>Legal or compliance advice. We may note what a vendor's terms say about commercial use, likeness and AI disclosure, unscored.</li>
+  </ul>
+
+  <h2>Source rules</h2>
+  <p>Public pages only: pricing page, help center, terms, changelog. We record the URL, the date printed on the page (or "no date shown") and the date we read it.</p>
+
+  <h2>Draft status</h2>
+  <p>A ranking page is marked <strong>DRAFT - not ready to publish: scores incomplete</strong> until every criterion for every tool has been checked against a source page. See the <a href="/rankings/ai-video-makers/">AI video makers ranking</a> for the current state.</p>
+
+  <h2 id="use-cases">How we pick use cases</h2>
+  <p>The home page is a feed of real AI use cases for businesses. These rules apply to every card. They are separate from the scoring above, and use cases are never scored or ranked.</p>
+  <ul class="plain">
+    <li><strong>A public source is required.</strong> Each card links to one public page (a company blog, case study, documentation, news article or public post) that we opened and read. Paywalled and login-only pages do not count. The card shows who reported it and the date printed on the page, or "no date shown".</li>
+    <li><strong>We summarise in our own words.</strong> Titles and summaries are written by us, not copied from the source. If a short quote is ever needed, it is under 15 words and in quotation marks.</li>
+    <li><strong>No results claims shown as fact.</strong> Income, revenue, return on investment and similar figures are left out. If a source's figure ever appears, the card says "the source reports" and names the source. Many sources are vendors' own marketing pages, so each card says "reported by" the vendor. A vendor's account is not independent proof.</li>
+    <li><strong>Tools are listed as the source names them.</strong> A tool links to its ScaleStack page only if we have one. Other tools show as plain names.</li>
+    <li><strong>No affiliate links or tracking.</strong> Source links are plain links.</li>
+    <li><strong>Uncertain fields are marked UNVERIFIED.</strong> A card without a source we read does not go on the page.</li>
+  </ul>
+
+  <h2>Corrections</h2>
+  <ul class="plain">
+    <li>Report an error at <a href="mailto:hello@scalestacktech.co">hello@scalestacktech.co</a>.</li>
+    <li>We fix confirmed errors and show the date of the change on the page.</li>
+    <li>If a correction changes a score, the rank is recalculated from the rubric. A vendor cannot ask us to change a score without a public page that supports it.</li>
+  </ul>
+</Base>

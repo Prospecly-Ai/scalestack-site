@@ -1,0 +1,1481 @@
+{
+  "category": "ai-video-makers",
+  "title": "AI video makers",
+  "rubric_version": "draft 1, 2026-10-16",
+  "complete": false,
+  "status": "DRAFT - not ready to publish: scores incomplete",
+  "criteria": [
+    {
+      "id": "output_quality",
+      "name": "Output quality",
+      "weight": 25,
+      "where": "Pricing page plan table; product docs or help center \"export\" article"
+    },
+    {
+      "id": "price_value",
+      "name": "Price and value",
+      "weight": 20,
+      "where": "Pricing page; credits explainer in help center"
+    },
+    {
+      "id": "ease_of_use",
+      "name": "Ease of use",
+      "weight": 15,
+      "where": "Product page; help center \"getting started\" and \"create a video\" articles"
+    },
+    {
+      "id": "free_tier",
+      "name": "Free tier",
+      "weight": 15,
+      "where": "Pricing page; plan comparison table; terms of service"
+    },
+    {
+      "id": "fit",
+      "name": "Fit for the use case",
+      "weight": 15,
+      "where": "Product page; features page; terms of service (commercial use clause)"
+    },
+    {
+      "id": "update_pace",
+      "name": "Update pace",
+      "weight": 10,
+      "where": "Changelog, release notes, product blog with dates, help center \"what's new\""
+    }
+  ],
+  "total_checked": 7,
+  "total_cells": 60,
+  "tools": [
+    {
+      "tool_id": "fliki",
+      "tool_name": "Fliki",
+      "total": 9.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://fliki.ai/pricing",
+          "evidence_quote": "Includes Fliki watermark"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 1,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://fliki.ai/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://fliki.ai/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://fliki.ai/terms"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 1,
+      "total_display": "9.0"
+    },
+    {
+      "tool_id": "heygen",
+      "tool_name": "HeyGen",
+      "total": 9.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.heygen.com/pricing",
+          "evidence_quote": "Videos up to 1 min"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 1,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.heygen.com/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.heygen.com/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://www.heygen.com/terms"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 1,
+      "total_display": "9.0"
+    },
+    {
+      "tool_id": "kapwing",
+      "tool_name": "Kapwing",
+      "total": 9.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.kapwing.com/pricing",
+          "evidence_quote": "Unlimited exports with a watermark"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 1,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.kapwing.com/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.kapwing.com/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://www.kapwing.com/policies/terms-of-service"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 1,
+      "total_display": "9.0"
+    },
+    {
+      "tool_id": "opusclip",
+      "tool_name": "OpusClip",
+      "total": 9.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.opus.pro/pricing",
+          "evidence_quote": "Has watermark"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 1,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.opus.pro/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.opus.pro/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://www.opus.pro/terms-of-service"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 1,
+      "total_display": "9.0"
+    },
+    {
+      "tool_id": "pictory",
+      "tool_name": "Pictory",
+      "total": 9.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://pictory.ai/pricing/",
+          "evidence_quote": "With our free trial, you can create 3 video projects"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 1,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://pictory.ai/pricing/"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://pictory.ai/pricing/"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://pictory.ai/terms-of-service"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 1,
+      "total_display": "9.0"
+    },
+    {
+      "tool_id": "synthesia",
+      "tool_name": "Synthesia",
+      "total": 9.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.synthesia.io/pricing",
+          "evidence_quote": "Videos carry a Synthesia watermark"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 1,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.synthesia.io/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.synthesia.io/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://www.synthesia.io/legal/customer-terms-of-service"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 1,
+      "total_display": "9.0"
+    },
+    {
+      "tool_id": "zebracat",
+      "tool_name": "Zebracat",
+      "total": 9.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.zebracat.ai/pricing",
+          "evidence_quote": "maximum length of 30 seconds per video"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 1,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.zebracat.ai/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.zebracat.ai/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://www.zebracat.ai/terms-and-conditions"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 1,
+      "total_display": "9.0"
+    },
+    {
+      "tool_id": "descript",
+      "tool_name": "Descript",
+      "total": 0.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 0,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.descript.com/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.descript.com/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.descript.com/pricing"
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://www.descript.com/terms"
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://www.descript.com/terms"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 8,
+      "total_display": "0.0"
+    },
+    {
+      "tool_id": "invideo-ai",
+      "tool_name": "invideo AI",
+      "total": 0.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 0,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://invideo.io/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://invideo.io/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://invideo.io/pricing"
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://invideo.io/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://invideo.io/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 8,
+      "total_display": "0.0"
+    },
+    {
+      "tool_id": "veed",
+      "tool_name": "VEED",
+      "total": 0.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "",
+          "evidence_quote": "UNVERIFIED: not yet checked"
+        }
+      ],
+      "checked_count": 0,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.veed.io/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.veed.io/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://www.veed.io/pricing"
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://www.veed.io/terms-of-use"
+            }
+          ]
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://www.veed.io/terms-of-use"
+            }
+          ]
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "pages": [
+            {
+              "kind": "changelog or release notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 8,
+      "total_display": "0.0"
+    }
+  ]
+}

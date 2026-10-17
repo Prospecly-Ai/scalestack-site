@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import Search from '../../components/Search.astro';
+import { loadTools, loadRanking, cardFor } from '../../lib/data';
+const tools = loadTools().slice().sort((a, b) => a.tool_name.toLowerCase().localeCompare(b.tool_name.toLowerCase()));
+const ranking = loadRanking();
+---
+<Base title="AI video maker tool pages, Desk-researched | ScaleStack Tech" description="One page for each AI video maker we cover, with price, free plan and terms fields linked to the vendor page we read. Desk-researched, no hands-on tests.">
+  <h1>AI video makers: {tools.length} tools</h1>
+  <p class="lede"><span class="tag red">Desk-researched</span> Each page shows what the vendor published, with source links and the date we retrieved it. Prices are being re-verified; check the vendor before you buy.</p>
+  <Search />
+  <ul class="cards wide">
+    {tools.map((t) => <ToolCard card={cardFor(t, ranking)} />)}
+  </ul>
+  <p>How we check: <a href="/methodology/">methodology</a>. See the <a href="/rankings/ai-video-makers/">AI video makers ranking</a> (draft).</p>
+</Base>
