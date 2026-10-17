@@ -1,14 +1,21 @@
 ---
 import { shownDate, type UseCase } from '../lib/data';
-interface Props { uc: UseCase }
-const { uc } = Astro.props;
+interface Props { uc: UseCase; idx?: number; isNew?: boolean }
+const { uc, idx = 0, isNew = false } = Astro.props;
 const text = `${uc.title} ${uc.summary} ${uc.tools.map((t) => t.name).join(' ')}`.toLowerCase();
+const code: Record<string, string> = { 'sales-lead-follow-up': 'SL', 'marketing-video': 'MV', 'operations-admin': 'OA', 'customer-support': 'CS', 'crm-ghl-snapshots': 'CR' };
 ---
-<li class="uc" id={`uc-${uc.id}`} data-id={uc.id} data-cat={uc.catSlug} data-tools={uc.tools.map((t) => t.name.toLowerCase()).join('|')} data-text={text}>
-  <p class="uc-cat"><a href={`/use-cases/${uc.catSlug}/`}>{uc.category}</a></p>
-  <h3>{uc.title}</h3>
-  <p class="sum">{uc.summary}</p>
-  <p class="uc-tools"><strong>Tools:</strong> {uc.tools.map((t, i) => (<>{i > 0 && ', '}{t.toolId ? <a href={`/tools/${t.toolId}/`}>{t.name}</a> : <span>{t.name}</span>}</>))}</p>
-  <p class="src">Reported by <a href={uc.sourceUrl} rel="nofollow noopener">{uc.sourceName}, {shownDate(uc.sourceDate)}</a>. Read {uc.fetched}.</p>
+<li class="uc" id={`uc-${uc.id}`} data-id={uc.id} data-i={idx} data-title={uc.title.toLowerCase()} data-new={isNew ? '1' : '0'} data-cat={uc.catSlug} data-tools={uc.tools.map((t) => t.name.toLowerCase()).join('|')} data-text={text}>
+  <div class="uc-card">
+    <a class={`badge b-${uc.catSlug}`} href={`/use-cases/${uc.catSlug}/`} title={uc.category} aria-label={`Category: ${uc.category}`}>{code[uc.catSlug] ?? 'UC'}</a>
+    <div class="uc-body">
+      <h3>{uc.title}</h3>
+      <p class="sum">{uc.summary}</p>
+      <ul class="uc-tools" aria-label="Tools used">
+        {uc.tools.map((t) => <li>{t.toolId ? <a class="tchip" href={`/tools/${t.toolId}/`}>{t.name}</a> : <span class="tchip">{t.name}</span>}</li>)}
+      </ul>
+      <p class="src">{isNew && <span class="newtag">New</span>} Reported by <a href={uc.sourceUrl} rel="nofollow noopener">{uc.sourceName}, {shownDate(uc.sourceDate)}</a>. Read {uc.fetched}.</p>
+    </div>
+  </div>
   <p class="uc-cta">Want this built for your business? <a href="/services/">Prospecly, ScaleStack's own agency.</a></p>
 </li>

@@ -1,20 +1,33 @@
 ---
 import '../styles/global.css';
+import { loadUseCases, loadTools, useCasesUpdated, prettyDate, USE_CASE_CATEGORIES, TOOL_GROUPS, groupOf } from '../lib/data';
 interface Props { title: string; description: string; noindex?: boolean; nocanonical?: boolean; }
 const { title, description, noindex = false, nocanonical = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const path = Astro.url.pathname;
 const nav = [
-  { href: '/', label: 'Home' },
+  { href: '/', label: 'AI tools directory' },
+  { href: '/use-cases/', label: 'Use cases' },
   { href: '/methodology/', label: 'Methodology' },
-  { href: '/rankings/', label: 'Rankings' },
-  { href: '/tools/', label: 'Tools' },
+  { href: '/tools/', label: 'Tool pages' },
   { href: '/services/', label: 'Services' },
+  { href: '/rss.xml', label: 'RSS feed' },
 ];
-const current = (h: string) => (h === '/' ? path === '/' : path.startsWith(h));
+const current = (h: string) => (h === '/' ? path === '/' : h === '/use-cases/' ? path === '/use-cases/' : path.startsWith(h));
+const dirTools = loadTools();
+const groupCount = (id: string) => dirTools.filter((t) => groupOf(t).id === id).length;
+
+const all = loadUseCases();
+const updated = prettyDate(useCasesUpdated(all));
+const catCount = (slug: string) => all.filter((u) => u.catSlug === slug).length;
+const toolCounts = new Map<string, number>();
+for (const u of all) for (const t of u.tools) toolCounts.set(t.name, (toolCounts.get(t.name) ?? 0) + 1);
+const toolList = [...toolCounts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+const newest = all.slice(0, 6);
+const initials = (n: string) => n.split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,33 +45,66 @@ const current = (h: string) => (h === '/' ? path === '/' : path.startsWith(h));
       (function () {
         var t = null;
         try { t = localStorage.getItem('theme'); } catch (e) {}
-        if (t !== 'dark' && t !== 'light') t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t !== 'dark' && t !== 'light') t = 'dark';
         document.documentElement.setAttribute('data-theme', t);
+        document.documentElement.className = 'js';
       })();
     </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <header class="site">
-      <div class="wrap">
-        <a class="brand" href="/">Scale<span>Stack</span> Tech</a>
-        <nav aria-label="Main">
+    <div class="shell">
+      <div class="mobilebar">
+        <a class="brand" href="/">Scale<span>Stack</span></a>
+        <button type="button" class="theme-toggle" aria-label="Switch to light mode" aria-pressed="true"><span class="ico" aria-hidden="true"></span></button>
+        <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="sidebar">Menu</button>
+      </div>
+      <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+        <div class="side-head">
+          <a class="brand" href="/">Scale<span>Stack</span></a>
+          <button type="button" class="theme-toggle" aria-label="Switch to light mode" aria-pressed="true"><span class="ico" aria-hidden="true"></span></button>
+        </div>
+        <p class="tagline">AI video makers and real business AI use cases, each linked to a public source page.</p>
+        <nav aria-label="Main" class="side-nav">
           <ul>
             {nav.map((n) => <li><a href={n.href} aria-current={current(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
-            <li><a href="/rss.xml">RSS</a></li>
-            <li><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></li>
           </ul>
         </nav>
+        <h2 class="side-h">Tool categories</h2>
+        <ul class="side-list" id="dcat-links" aria-label="Tool categories">
+          {TOOL_GROUPS.map((g) => <li><a href={`/?cat=${g.id}`} class="side-link dcat-link" data-dcat={g.id}><span>{g.name}</span> <span class="count">{groupCount(g.id)}</span></a></li>)}
+        </ul>
+        <h2 class="side-h">Use case categories</h2>
+        <ul class="side-list" id="cat-chips" aria-label="Filter use cases by category">
+          <li><a href="/use-cases/" class="side-link cat-link" data-cat="" aria-current={path === '/use-cases/' ? 'true' : undefined}><span>All use cases</span> <span class="count">{all.length}</span></a></li>
+          {USE_CASE_CATEGORIES.map((c) => <li><a href={`/use-cases/${c.slug}/`} class="side-link cat-link" data-cat={c.slug} aria-current={path === `/use-cases/${c.slug}/` ? 'page' : undefined}><span>{c.name}</span> <span class="count">{catCount(c.slug)}</span></a></li>)}
+        </ul>
+        <h2 class="side-h">Tools in use cases</h2>
+        <ul class="side-list tools" id="tool-chips" aria-label="Filter use cases by tool">
+          {toolList.map(([name, n]) => <li><a href={`/use-cases/?tool=${encodeURIComponent(name.toLowerCase())}`} class="side-link tool-link" data-tool={name.toLowerCase()}><span class="tbadge" aria-hidden="true">{initials(name)}</span><span>{name}</span> <span class="count">{n}</span></a></li>)}
+        </ul>
+      </aside>
+      <div class="content">
+        <slot name="topbar" />
+        <main>
+          <div class="wrap"><slot /></div>
+        </main>
       </div>
-    </header>
-    <main>
-      <div class="wrap"><slot /></div>
-    </main>
-    <footer class="site">
-      <div class="wrap">
-        <p>Contact and corrections: <a href="mailto:hello@scalestacktech.co">hello@scalestacktech.co</a></p>
-        <p><a href="/services/">Work with Prospecly, ScaleStack's own agency</a></p>
-        <p><a href="/methodology/">Methodology</a> · <a href="/rankings/">Rankings</a> · <a href="/tools/">Tools</a> · <a href="/services/">Services</a> · <a href="/rss.xml">RSS feed</a></p>
+    </div>
+    <footer class="billboard" aria-label="ScaleStack notices">
+      <div class="ticker">
+        <ul class="track">
+          <li><a href="/services/">Work with Prospecly, ScaleStack's own agency</a></li>
+          <li>Contact: <a href="mailto:hello@scalestacktech.co">hello@scalestacktech.co</a></li>
+          <li>Desk-researched, last checked {updated}</li>
+          {newest.map((u) => <li>New: <a href={`/use-cases/${u.catSlug}/#uc-${u.id}`}>{u.title}</a></li>)}
+        </ul>
+        <ul class="track dup" aria-hidden="true">
+          <li><a href="/services/" tabindex="-1">Work with Prospecly, ScaleStack's own agency</a></li>
+          <li>Contact: <a href="mailto:hello@scalestacktech.co" tabindex="-1">hello@scalestacktech.co</a></li>
+          <li>Desk-researched, last checked {updated}</li>
+          {newest.map((u) => <li>New: <a href={`/use-cases/${u.catSlug}/#uc-${u.id}`} tabindex="-1">{u.title}</a></li>)}
+        </ul>
       </div>
     </footer>
     <script is:inline src="/theme.js" defer></script>

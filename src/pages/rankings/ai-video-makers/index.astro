@@ -1,9 +1,22 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import { loadRanking } from '../../../lib/data';
+import { loadRanking, PRICE_NOTES, unverifiedNote } from '../../../lib/data';
 const r = loadRanking();
 const crit = r.criteria;
 const needs = r.tools.filter((t: any) => t.needs.length > 0);
+const cells = (id: string) => r.tools.map((t: any) => t.criteria.find((c: any) => c.criterion === id));
+const nTools = r.tools.length;
+const price = cells('price_value');
+const priceScored = price.filter((c: any) => c.checked && c.score > 0).length;
+const priceFive = price.filter((c: any) => c.score === 5).length;
+const pace = cells('update_pace');
+const paceFive = pace.filter((c: any) => c.score === 5).length;
+const paceThree = pace.filter((c: any) => c.score === 3).length;
+const paceNone = pace.filter((c: any) => !c.checked).length;
+const rest = ['output_quality', 'ease_of_use', 'fit'].flatMap((id) => cells(id));
+const restChecked = rest.filter((c: any) => c.checked).length;
+const toolNotes = r.tools.map((t: any) => ({ t, note: unverifiedNote(t) })).filter((x: any) => x.note);
+const priceNotes = r.tools.filter((t: any) => PRICE_NOTES[t.tool_id]);
 ---
 <Base title="AI video makers ranking (draft) | ScaleStack Tech" description="Draft ranking of 10 AI video makers from vendor-published pages. Scores are incomplete, so this page is marked DRAFT. Order is by total score, ties alphabetical." noindex={!r.complete}>
   <h1>AI video makers ranking</h1>
@@ -68,11 +81,21 @@ const needs = r.tools.filter((t: any) => t.needs.length > 0);
     </table>
   </div>
 
+  {(toolNotes.length > 0 || priceNotes.length > 0) && (
+    <>
+      <h2>Notes on individual tools</h2>
+      <ul class="plain">
+        {toolNotes.map((x: any) => <li><strong>{x.t.tool_name}:</strong> {x.note}</li>)}
+        {priceNotes.map((t: any) => <li><strong>{t.tool_name} price note:</strong> {PRICE_NOTES[t.tool_id]}</li>)}
+      </ul>
+    </>
+  )}
+
   <h2>Why the checked scores are what they are</h2>
   <ul class="plain">
-    <li><strong>Free tier</strong> is scored 3 only where a vendor page states a free plan or trial and also states a watermark or a small cap on length or credits. No tool's pages say its free exports have no watermark, so none scores 5.</li>
-    <li><strong>Price and value</strong> stays 0 for every tool: the 3 anchor needs the price, the billing period and the limit that the price buys, and we have not recorded the limit. Prices are also being re-verified.</li>
-    <li><strong>Update pace</strong> needs a dated changelog entry, which we have not recorded for any tool.</li>
-    <li><strong>Output quality, Ease of use and Fit</strong> need help center, product or terms pages that we have not yet read for this purpose.</li>
+    <li><strong>Free tier</strong> is scored 3 only where a vendor page states a free plan or trial and also states a watermark or a small cap on length or credits. {cells('free_tier').filter((c: any) => c.score === 5).length === 0 ? "No tool's pages say its free exports have no watermark, so none scores 5." : 'See the table for the tools that score 5.'}</li>
+    <li><strong>Price and value</strong> is scored from the published price and limit on each tool's pricing page, using the page's default billing view. {priceScored} of {nTools} tools score on that basis. A price-per-minute comparison is not applied yet because most pages do not publish minutes{priceFive === 0 ? ', so none scores 5' : ''}. Prices are still being re-verified.</li>
+    <li><strong>Update pace</strong>: {paceFive} of {nTools} tools show two or more dated entries in the 90 days before the check, {paceThree} show a dated entry in the last 6 months, and {paceNone} have no dated product entry on a page we could read. Where a page gives only a month and year, the score uses that month.</li>
+    <li><strong>Output quality, Ease of use and Fit</strong>: {restChecked} of {rest.length} of these scores are checked against a source page. The rest wait for help center, product or terms pages we have not read yet.</li>
   </ul>
 </Base>

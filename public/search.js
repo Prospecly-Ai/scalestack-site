@@ -1,5 +1,5 @@
 // Client-side search over /search.json. No third-party scripts, no external requests.
-// On the home page (#feed exists) it filters the use case cards in place (see feed.js) and lists matching tool pages.
+// On the use cases page (#feed exists) it filters the use case cards in place (see feed.js) and lists matching tool pages.
 // Elsewhere it lists matching tools and use cases.
 (function () {
   var input = document.getElementById('q');
@@ -7,6 +7,7 @@
   var out = document.getElementById('search-results');
   var status = document.getElementById('search-status');
   var feedMode = !!document.getElementById('feed');
+  var dirMode = !!document.getElementById('dir');
   var index = null;
   function hay(t) { return (t.name + ' ' + t.summary + ' ' + t.job).toLowerCase(); }
   function card(t) {
@@ -20,6 +21,12 @@
     q = q.trim().toLowerCase();
     var cases = [], tools = [];
     if (q) { index.forEach(function (t) { if (hay(t).indexOf(q) !== -1) (t.type === 'tool' ? tools : cases).push(t); }); }
+    if (dirMode) {
+      window.dispatchEvent(new CustomEvent('feed-search', { detail: { q: q, toolIds: q ? tools.map(function (t) { return t.id; }) : null } }));
+      cases.slice(0, 12).forEach(function (t) { out.appendChild(card(t)); });
+      status.textContent = q ? (tools.length + ' tools and ' + cases.length + ' use cases match "' + input.value.trim() + '"' + (cases.length > 12 ? ' (first 12 use cases shown below)' : '')) : '';
+      return;
+    }
     if (feedMode) {
       window.dispatchEvent(new CustomEvent('feed-search', { detail: { q: q, ids: q ? cases.map(function (t) { return t.id; }) : null } }));
       tools.forEach(function (t) { out.appendChild(card(t)); });

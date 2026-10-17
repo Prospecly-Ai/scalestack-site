@@ -42,321 +42,43 @@
       "where": "Changelog, release notes, product blog with dates, help center \"what's new\""
     }
   ],
-  "total_checked": 7,
+  "total_checked": 37,
   "total_cells": 60,
   "tools": [
     {
-      "tool_id": "fliki",
-      "tool_name": "Fliki",
-      "total": 9.0,
-      "criteria": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "weight": 25,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "free_tier",
-          "name": "Free tier",
-          "weight": 15,
-          "score": 3,
-          "points": 9.0,
-          "checked": true,
-          "evidence_url": "https://fliki.ai/pricing",
-          "evidence_quote": "Includes Fliki watermark"
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "weight": 10,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        }
-      ],
-      "checked_count": 1,
-      "criteria_count": 6,
-      "needs": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://fliki.ai/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://fliki.ai/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "terms of service",
-              "url": "https://fliki.ai/terms"
-            }
-          ]
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "pages": [
-            {
-              "kind": "changelog or release notes",
-              "url": null
-            }
-          ]
-        }
-      ],
-      "rank": 1,
-      "total_display": "9.0"
-    },
-    {
-      "tool_id": "heygen",
-      "tool_name": "HeyGen",
-      "total": 9.0,
-      "criteria": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "weight": 25,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "free_tier",
-          "name": "Free tier",
-          "weight": 15,
-          "score": 3,
-          "points": 9.0,
-          "checked": true,
-          "evidence_url": "https://www.heygen.com/pricing",
-          "evidence_quote": "Videos up to 1 min"
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "weight": 10,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        }
-      ],
-      "checked_count": 1,
-      "criteria_count": 6,
-      "needs": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.heygen.com/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.heygen.com/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "terms of service",
-              "url": "https://www.heygen.com/terms"
-            }
-          ]
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "pages": [
-            {
-              "kind": "changelog or release notes",
-              "url": null
-            }
-          ]
-        }
-      ],
-      "rank": 1,
-      "total_display": "9.0"
-    },
-    {
       "tool_id": "kapwing",
       "tool_name": "Kapwing",
-      "total": 9.0,
+      "total": 60.0,
       "criteria": [
         {
           "criterion": "output_quality",
           "name": "Output quality",
           "weight": 25,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 15.0,
+          "checked": true,
+          "evidence_url": "https://www.kapwing.com/pricing",
+          "evidence_quote": "Export content in 4K resolution; Create and edit unlimited projects; Export projects up to 2 hours long"
         },
         {
           "criterion": "price_value",
           "name": "Price and value",
           "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://www.kapwing.com/pricing",
+          "evidence_quote": "Pro | \"1,000 credits / month\" | \"$\" \"16\""
         },
         {
           "criterion": "ease_of_use",
           "name": "Ease of use",
           "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.kapwing.com/",
+          "evidence_quote": "Video Editor Edit video clips, combine tracks together, and add effects all in one place"
         },
         {
           "criterion": "free_tier",
@@ -372,24 +94,270 @@
           "criterion": "fit",
           "name": "Fit for the use case",
           "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.kapwing.com/pricing",
+          "evidence_quote": "Upload files up to 6 GB"
         },
         {
           "criterion": "update_pace",
           "name": "Update pace",
           "weight": 10,
+          "score": 3,
+          "points": 6.0,
+          "checked": true,
+          "evidence_url": "https://www.kapwing.com/help/tag/release-notes/",
+          "evidence_quote": "Release Notes - August 2026"
+        }
+      ],
+      "checked_count": 6,
+      "criteria_count": 6,
+      "needs": [],
+      "rank": 1,
+      "total_display": "60.0"
+    },
+    {
+      "tool_id": "fliki",
+      "tool_name": "Fliki",
+      "total": 55.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 3,
+          "points": 15.0,
+          "checked": true,
+          "evidence_url": "https://fliki.ai/pricing",
+          "evidence_quote": "Full HD - 1080p videos; Videos upto 15 minutes"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://fliki.ai/pricing",
+          "evidence_quote": "Standard | \"$28 $21\" ($28 struck) | \"per user / month · $252 billed annually\" | \"2160 credits per year\""
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://fliki.ai/pricing",
+          "evidence_quote": "UNVERIFIED: R2b recheck 2026-10-16 (raw6/fliki_templates, raw7/fliki_templates): fliki.ai/templates is HTTP 404 (curl and browser, 'Page not found'); nav is Features, Use cases, Explore (/guide), Pricing. /use-cases shows filter chips and cards (Avatar, Training, UGC ad, Music video, Explainer) but is not a template gallery"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://fliki.ai/pricing",
+          "evidence_quote": "Includes Fliki watermark"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://fliki.ai/",
+          "evidence_quote": "Upload a product photo and pick a look, and Fliki writes the copy and designs ready-to-run ads"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 5,
+          "points": 10.0,
+          "checked": true,
+          "evidence_url": "https://fliki.ai/whats-new",
+          "evidence_quote": "Video podcast maker Oct 9, 2026"
         }
       ],
-      "checked_count": 1,
+      "checked_count": 5,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 2,
+      "total_display": "55.0"
+    },
+    {
+      "tool_id": "heygen",
+      "tool_name": "HeyGen",
+      "total": 51.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 3,
+          "points": 15.0,
+          "checked": true,
+          "evidence_url": "https://www.heygen.com/pricing",
+          "evidence_quote": "Videos up to 30 mins; 1080p video export"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://www.heygen.com/pricing",
+          "evidence_quote": "Creator | \"$29 / mo\" | (no billed line) | \"600 credits\""
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://www.heygen.com/pricing",
+          "evidence_quote": "UNVERIFIED: /templates redirected to another page; public template gallery not confirmed"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.heygen.com/pricing",
+          "evidence_quote": "3 videos per month; Videos up to 1 min"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.heygen.com/",
+          "evidence_quote": "Upload a short clip or reference image"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 3,
+          "points": 6.0,
+          "checked": true,
+          "evidence_url": "https://www.heygen.com/blog",
+          "evidence_quote": "Product Updates Published August 11th, 2026 Introducing HeyGen for Real Estate"
+        }
+      ],
+      "checked_count": 5,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "pages": [
+            {
+              "kind": "product or features page",
+              "url": null
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "rank": 3,
+      "total_display": "51.0"
+    },
+    {
+      "tool_id": "descript",
+      "tool_name": "Descript",
+      "total": 40.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://www.descript.com/pricing",
+          "evidence_quote": "UNVERIFIED: pricing lists 1080p/4K export but no max export video length (only web link duration and media minutes)"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://www.descript.com/pricing",
+          "evidence_quote": "Hobbyist | \"$16\" | \"per person / month\" | \"1 person included\" | \"10 media hours / month\""
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.descript.com/",
+          "evidence_quote": "Editing video in Descript is as easy as using docs and slides."
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.descript.com/pricing",
+          "evidence_quote": "Media minutes 60 minutes (1 hr) / month"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://www.descript.com/pricing",
+          "evidence_quote": "UNVERIFIED: only 1-2 of 4 fit features quoted (upload); captions text not clearly automatic; no 9:16 or commercial-use text"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 5,
+          "points": 10.0,
+          "checked": true,
+          "evidence_url": "https://descript.canny.io/changelog",
+          "evidence_quote": "Release roundup—October 12, 2026"
+        }
+      ],
+      "checked_count": 4,
       "criteria_count": 6,
       "needs": [
         {
@@ -398,35 +366,7 @@
           "pages": [
             {
               "kind": "pricing page",
-              "url": "https://www.kapwing.com/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.kapwing.com/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
+              "url": "https://www.descript.com/pricing"
             },
             {
               "kind": "help center article",
@@ -444,7 +384,94 @@
             },
             {
               "kind": "terms of service",
-              "url": "https://www.kapwing.com/policies/terms-of-service"
+              "url": "https://www.descript.com/terms"
+            }
+          ]
+        }
+      ],
+      "rank": 4,
+      "total_display": "40.0"
+    },
+    {
+      "tool_id": "pictory",
+      "tool_name": "Pictory",
+      "total": 39.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://pictory.ai/pricing",
+          "evidence_quote": "UNVERIFIED: rendered compare table lists 1080p and max length but its column headers are not in the rendered text, so no named plan"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://pictory.ai/pricing",
+          "evidence_quote": "Starter | \"$25 $29\" ($29 struck) | \"per month, billed annually\" | \"2,400 minutes yr\""
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://pictory.ai/",
+          "evidence_quote": "Edit videos faster with Gen AI-powered video editing"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://pictory.ai/pricing",
+          "evidence_quote": "With our free trial, you can create 3 video projects"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://pictory.ai/",
+          "evidence_quote": "automatic captions"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://pictory.ai/pricing",
+          "evidence_quote": "UNVERIFIED: no changelog URL found (release-notes 404); blog has no dated product entries in fetched text"
+        }
+      ],
+      "checked_count": 4,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://pictory.ai/pricing/"
+            },
+            {
+              "kind": "help center article",
+              "url": null
             }
           ]
         },
@@ -459,13 +486,13 @@
           ]
         }
       ],
-      "rank": 1,
-      "total_display": "9.0"
+      "rank": 5,
+      "total_display": "39.0"
     },
     {
       "tool_id": "opusclip",
       "tool_name": "OpusClip",
-      "total": 9.0,
+      "total": 36.0,
       "criteria": [
         {
           "criterion": "output_quality",
@@ -474,18 +501,18 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.opus.pro/pricing",
+          "evidence_quote": "UNVERIFIED: rendered pricing gives 1080p only for the Free plan; no paid plan length/resolution"
         },
         {
           "criterion": "price_value",
           "name": "Price and value",
           "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://www.opus.pro/pricing",
+          "evidence_quote": "Starter | \"$15 USD/mo\" | \"Starter plan only available in monthly\" | \"$15 billed monthly \" | \"150 credits \" \" per month\""
         },
         {
           "criterion": "ease_of_use",
@@ -494,8 +521,8 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.opus.pro/pricing",
+          "evidence_quote": "UNVERIFIED: only brand templates mentioned; no public template gallery (opus.pro/templates 404)"
         },
         {
           "criterion": "free_tier",
@@ -505,17 +532,17 @@
           "points": 9.0,
           "checked": true,
           "evidence_url": "https://www.opus.pro/pricing",
-          "evidence_quote": "Has watermark"
+          "evidence_quote": "\"Has watermark\""
         },
         {
           "criterion": "fit",
           "name": "Fit for the use case",
           "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 5,
+          "points": 15.0,
+          "checked": true,
+          "evidence_url": "https://www.opus.pro/",
+          "evidence_quote": "Or upload videos after signing up"
         },
         {
           "criterion": "update_pace",
@@ -524,11 +551,11 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.opus.pro/pricing",
+          "evidence_quote": "UNVERIFIED: no changelog URL found (changelog/release-notes 404); blog text has no dates"
         }
       ],
-      "checked_count": 1,
+      "checked_count": 3,
       "criteria_count": 6,
       "needs": [
         {
@@ -546,20 +573,6 @@
           ]
         },
         {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.opus.pro/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
           "criterion": "ease_of_use",
           "name": "Ease of use",
           "pages": [
@@ -570,20 +583,6 @@
             {
               "kind": "help center article",
               "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "terms of service",
-              "url": "https://www.opus.pro/terms-of-service"
             }
           ]
         },
@@ -598,33 +597,33 @@
           ]
         }
       ],
-      "rank": 1,
-      "total_display": "9.0"
+      "rank": 6,
+      "total_display": "36.0"
     },
     {
-      "tool_id": "pictory",
-      "tool_name": "Pictory",
-      "total": 9.0,
+      "tool_id": "zebracat",
+      "tool_name": "Zebracat",
+      "total": 36.0,
       "criteria": [
         {
           "criterion": "output_quality",
           "name": "Output quality",
           "weight": 25,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 15.0,
+          "checked": true,
+          "evidence_url": "https://www.zebracat.ai/pricing",
+          "evidence_quote": "Compare (Cat Mode/Super Cat/Unlimited Cat/Enterprise): Videos per Month 15/40/Unlimited/Unlimited; Video Length Limit 2 min/5 min/5 min/5 min; Free Edits per video 3/3/5/Unlimited; Export Resolution 1080p all"
         },
         {
           "criterion": "price_value",
           "name": "Price and value",
           "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://www.zebracat.ai/pricing",
+          "evidence_quote": "Cat Mode | \"$39 $23/mo\" ($39 struck) | \"Billed yearly\" | \"15 videos / mo\""
         },
         {
           "criterion": "ease_of_use",
@@ -633,28 +632,28 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.zebracat.ai/pricing",
+          "evidence_quote": "UNVERIFIED: no template library found on the home page; /templates returned 404"
         },
         {
           "criterion": "free_tier",
           "name": "Free tier",
           "weight": 15,
-          "score": 3,
-          "points": 9.0,
-          "checked": true,
-          "evidence_url": "https://pictory.ai/pricing/",
-          "evidence_quote": "With our free trial, you can create 3 video projects"
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://www.zebracat.ai/pricing",
+          "evidence_quote": "UNVERIFIED: rendered pricing shows no free plan card (static fetch mentioned a free plan; not relied on)"
         },
         {
           "criterion": "fit",
           "name": "Fit for the use case",
           "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://www.zebracat.ai/",
+          "evidence_quote": "Upload one photo and get a finished video back"
         },
         {
           "criterion": "update_pace",
@@ -663,41 +662,13 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.zebracat.ai/pricing",
+          "evidence_quote": "UNVERIFIED: no changelog URL found (changelog/updates 404); blog posts are marketing articles"
         }
       ],
-      "checked_count": 1,
+      "checked_count": 3,
       "criteria_count": 6,
       "needs": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://pictory.ai/pricing/"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://pictory.ai/pricing/"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
         {
           "criterion": "ease_of_use",
           "name": "Ease of use",
@@ -713,16 +684,16 @@
           ]
         },
         {
-          "criterion": "fit",
-          "name": "Fit for the use case",
+          "criterion": "free_tier",
+          "name": "Free tier",
           "pages": [
             {
-              "kind": "product or features page",
-              "url": null
+              "kind": "pricing page",
+              "url": "https://www.zebracat.ai/pricing"
             },
             {
               "kind": "terms of service",
-              "url": "https://pictory.ai/terms-of-service"
+              "url": "https://www.zebracat.ai/terms-and-conditions"
             }
           ]
         },
@@ -737,13 +708,13 @@
           ]
         }
       ],
-      "rank": 1,
-      "total_display": "9.0"
+      "rank": 6,
+      "total_display": "36.0"
     },
     {
       "tool_id": "synthesia",
       "tool_name": "Synthesia",
-      "total": 9.0,
+      "total": 31.0,
       "criteria": [
         {
           "criterion": "output_quality",
@@ -752,18 +723,18 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.synthesia.io/pricing",
+          "evidence_quote": "UNVERIFIED: rendered pricing shows 'Video length Up to 3 minutes' but no export resolution for a named paid plan"
         },
         {
           "criterion": "price_value",
           "name": "Price and value",
           "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://www.synthesia.io/pricing",
+          "evidence_quote": "\"$14 per month\" | \"15,000 CREDITS / YEAR\""
         },
         {
           "criterion": "ease_of_use",
@@ -772,8 +743,8 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.synthesia.io/pricing",
+          "evidence_quote": "UNVERIFIED: no editor + public template library description found in fetched pages (video examples page only)"
         },
         {
           "criterion": "free_tier",
@@ -792,40 +763,26 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.synthesia.io/pricing",
+          "evidence_quote": "UNVERIFIED: only 1 of 4 fit features quoted (upload own footage); no captions, 9:16 or commercial-use text"
         },
         {
           "criterion": "update_pace",
           "name": "Update pace",
           "weight": 10,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 5,
+          "points": 10.0,
+          "checked": true,
+          "evidence_url": "https://www.synthesia.io/updates",
+          "evidence_quote": "Add burned-in captions to dubbed videos in one click, so your localized content stays accessible and easy to follow, even with sound off. 9/30/2026"
         }
       ],
-      "checked_count": 1,
+      "checked_count": 3,
       "criteria_count": 6,
       "needs": [
         {
           "criterion": "output_quality",
           "name": "Output quality",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.synthesia.io/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
           "pages": [
             {
               "kind": "pricing page",
@@ -864,6 +821,107 @@
               "url": "https://www.synthesia.io/legal/customer-terms-of-service"
             }
           ]
+        }
+      ],
+      "rank": 8,
+      "total_display": "31.0"
+    },
+    {
+      "tool_id": "invideo-ai",
+      "tool_name": "invideo AI",
+      "total": 30.0,
+      "criteria": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "weight": 25,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://invideo.io/pricing",
+          "evidence_quote": "UNVERIFIED: rendered pricing page states no export resolution or max video length for any paid plan"
+        },
+        {
+          "criterion": "price_value",
+          "name": "Price and value",
+          "weight": 20,
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://invideo.io/pricing",
+          "evidence_quote": "STARTER | \"400 credits/mo.\" | \"$20\" (struck) \"$10\" | \"per seat/mo, billed annually\""
+        },
+        {
+          "criterion": "ease_of_use",
+          "name": "Ease of use",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://invideo.io/",
+          "evidence_quote": "The agentic video editor for serious creatives"
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "weight": 15,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://invideo.io/pricing",
+          "evidence_quote": "UNVERIFIED: rendered pricing shows no free plan card and no free trial"
+        },
+        {
+          "criterion": "fit",
+          "name": "Fit for the use case",
+          "weight": 15,
+          "score": 3,
+          "points": 9.0,
+          "checked": true,
+          "evidence_url": "https://invideo.io/",
+          "evidence_quote": "Upload footage to your first project"
+        },
+        {
+          "criterion": "update_pace",
+          "name": "Update pace",
+          "weight": 10,
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://invideo.io/pricing",
+          "evidence_quote": "UNVERIFIED: blog is guides and model explainers; no changelog or product-update entries found (invideo.io/changelog 404)"
+        }
+      ],
+      "checked_count": 3,
+      "criteria_count": 6,
+      "needs": [
+        {
+          "criterion": "output_quality",
+          "name": "Output quality",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://invideo.io/pricing"
+            },
+            {
+              "kind": "help center article",
+              "url": null
+            }
+          ]
+        },
+        {
+          "criterion": "free_tier",
+          "name": "Free tier",
+          "pages": [
+            {
+              "kind": "pricing page",
+              "url": "https://invideo.io/pricing"
+            },
+            {
+              "kind": "terms of service",
+              "url": "https://invideo.io/terms-and-conditions/"
+            }
+          ]
         },
         {
           "criterion": "update_pace",
@@ -876,13 +934,13 @@
           ]
         }
       ],
-      "rank": 1,
-      "total_display": "9.0"
+      "rank": 9,
+      "total_display": "30.0"
     },
     {
-      "tool_id": "zebracat",
-      "tool_name": "Zebracat",
-      "total": 9.0,
+      "tool_id": "veed",
+      "tool_name": "VEED",
+      "total": 12.0,
       "criteria": [
         {
           "criterion": "output_quality",
@@ -891,18 +949,18 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.veed.io/pricing",
+          "evidence_quote": "UNVERIFIED: R2 recheck 2026-10-16 (raw6/veed_pricing): rendered pricing lists credits, 'No watermark' and AI tools only; no export resolution or max video length for any plan"
         },
         {
           "criterion": "price_value",
           "name": "Price and value",
           "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "score": 3,
+          "points": 12.0,
+          "checked": true,
+          "evidence_url": "https://www.veed.io/pricing",
+          "evidence_quote": "Creator $147 per user / year, 6,000 Credits · ~1,500 AI Videos"
         },
         {
           "criterion": "ease_of_use",
@@ -911,18 +969,18 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.veed.io/pricing",
+          "evidence_quote": "UNVERIFIED: R2 recheck 2026-10-16 (raw6/veed_templates, veed_pricing): /templates redirects to the home page, so no public template gallery; pricing page has no editor description (only 'Custom Templates' on Studio)"
         },
         {
           "criterion": "free_tier",
           "name": "Free tier",
           "weight": 15,
-          "score": 3,
-          "points": 9.0,
-          "checked": true,
-          "evidence_url": "https://www.zebracat.ai/pricing",
-          "evidence_quote": "maximum length of 30 seconds per video"
+          "score": 0,
+          "points": 0.0,
+          "checked": false,
+          "evidence_url": "https://www.veed.io/pricing",
+          "evidence_quote": "UNVERIFIED: R2 recheck 2026-10-16 (raw6/veed_pricing): no Free plan card; 'Start for free, upgrade to get powerful features.' is not a published free plan with watermark or caps; trial FAQ answer not expanded"
         },
         {
           "criterion": "fit",
@@ -931,8 +989,8 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.veed.io/pricing",
+          "evidence_quote": "UNVERIFIED: R2 recheck 2026-10-16 (raw6/veed_pricing): only 1 of 4 fit features shown ('Unlimited Auto Subtitles' on Creator); no upload, 9:16 or commercial-use text, so below the 2-feature anchor"
         },
         {
           "criterion": "update_pace",
@@ -941,8 +999,8 @@
           "score": 0,
           "points": 0.0,
           "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
+          "evidence_url": "https://www.veed.io/pricing",
+          "evidence_quote": "UNVERIFIED: R2b recheck 2026-10-16 (raw6/veed_changelog, raw7/veed_updates): veed.io/updates: HTTP 200; empty page body, then redirected to https://www.veed.io/login after 10 seconds; no dated entries. Footer has no changelog link and /blog listing shows no dates"
         }
       ],
       "checked_count": 1,
@@ -954,465 +1012,6 @@
           "pages": [
             {
               "kind": "pricing page",
-              "url": "https://www.zebracat.ai/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.zebracat.ai/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "terms of service",
-              "url": "https://www.zebracat.ai/terms-and-conditions"
-            }
-          ]
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "pages": [
-            {
-              "kind": "changelog or release notes",
-              "url": null
-            }
-          ]
-        }
-      ],
-      "rank": 1,
-      "total_display": "9.0"
-    },
-    {
-      "tool_id": "descript",
-      "tool_name": "Descript",
-      "total": 0.0,
-      "criteria": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "weight": 25,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "free_tier",
-          "name": "Free tier",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "weight": 10,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        }
-      ],
-      "checked_count": 0,
-      "criteria_count": 6,
-      "needs": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.descript.com/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.descript.com/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "free_tier",
-          "name": "Free tier",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.descript.com/pricing"
-            },
-            {
-              "kind": "terms of service",
-              "url": "https://www.descript.com/terms"
-            }
-          ]
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "terms of service",
-              "url": "https://www.descript.com/terms"
-            }
-          ]
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "pages": [
-            {
-              "kind": "changelog or release notes",
-              "url": null
-            }
-          ]
-        }
-      ],
-      "rank": 8,
-      "total_display": "0.0"
-    },
-    {
-      "tool_id": "invideo-ai",
-      "tool_name": "invideo AI",
-      "total": 0.0,
-      "criteria": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "weight": 25,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "free_tier",
-          "name": "Free tier",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "weight": 10,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        }
-      ],
-      "checked_count": 0,
-      "criteria_count": 6,
-      "needs": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://invideo.io/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://invideo.io/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "free_tier",
-          "name": "Free tier",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://invideo.io/pricing"
-            },
-            {
-              "kind": "terms of service",
-              "url": "https://invideo.io/terms-and-conditions/"
-            }
-          ]
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "pages": [
-            {
-              "kind": "product or features page",
-              "url": null
-            },
-            {
-              "kind": "terms of service",
-              "url": "https://invideo.io/terms-and-conditions/"
-            }
-          ]
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "pages": [
-            {
-              "kind": "changelog or release notes",
-              "url": null
-            }
-          ]
-        }
-      ],
-      "rank": 8,
-      "total_display": "0.0"
-    },
-    {
-      "tool_id": "veed",
-      "tool_name": "VEED",
-      "total": 0.0,
-      "criteria": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "weight": 25,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "weight": 20,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "ease_of_use",
-          "name": "Ease of use",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "free_tier",
-          "name": "Free tier",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "fit",
-          "name": "Fit for the use case",
-          "weight": 15,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        },
-        {
-          "criterion": "update_pace",
-          "name": "Update pace",
-          "weight": 10,
-          "score": 0,
-          "points": 0.0,
-          "checked": false,
-          "evidence_url": "",
-          "evidence_quote": "UNVERIFIED: not yet checked"
-        }
-      ],
-      "checked_count": 0,
-      "criteria_count": 6,
-      "needs": [
-        {
-          "criterion": "output_quality",
-          "name": "Output quality",
-          "pages": [
-            {
-              "kind": "pricing page",
-              "url": "https://www.veed.io/pricing"
-            },
-            {
-              "kind": "help center article",
-              "url": null
-            }
-          ]
-        },
-        {
-          "criterion": "price_value",
-          "name": "Price and value",
-          "pages": [
-            {
-              "kind": "pricing page",
               "url": "https://www.veed.io/pricing"
             },
             {
@@ -1474,8 +1073,8 @@
           ]
         }
       ],
-      "rank": 8,
-      "total_display": "0.0"
+      "rank": 10,
+      "total_display": "12.0"
     }
   ]
 }

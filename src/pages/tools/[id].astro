@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import FieldRow from '../../components/FieldRow.astro';
-import { loadTools, loadEvidence, isTrue, money, show } from '../../lib/data';
+import { loadTools, loadEvidence, loadRanking, isTrue, money, show, PRICE_NOTES, unverifiedNote, priceViewNote } from '../../lib/data';
 
 export function getStaticPaths() {
   const tools = loadTools();
@@ -20,6 +20,18 @@ const shown = [
 const unverifiedCount = shown.filter((f) => tool[f] === 'UNVERIFIED').length;
 const name = tool.tool_name;
 const altPerMonth = tool.starting_price_alt_usd;
+// Labels follow the recorded billing period (VEED's default view is yearly, so its first price is billed annually).
+const unitText = tool.price_unit === 'UNVERIFIED' ? 'period not printed on the page' : show(tool.price_unit);
+const priceLabel = `Price in the default view: ${show(tool.starting_price_billing)}, ${unitText} (USD)`;
+const altLabel = tool.starting_price_alt_billing === 'NOT_OFFERED'
+  ? 'Price in the other view (USD)'
+  : tool.starting_price_alt_billing === 'monthly'
+    ? 'Price in the other view: billed monthly, per month (USD)'
+    : 'Price in the other view: billed annually, shown per month (USD)';
+const altBillingLabel = 'Billing for the other-view price';
+const rt = loadRanking().tools.find((x: any) => x.tool_id === tool.tool_id);
+const unvNote = unverifiedNote(rt);
+const priceNote = PRICE_NOTES[tool.tool_id];
 ---
 <Base title={`${name}: price, free plan and terms, Desk-researched | ScaleStack Tech`} description={`${name} pricing, free plan and commercial-use terms as published by the vendor, with source links. Desk-researched, last checked ${tool.last_checked}.`}>
   <p><a href="/tools/">All tools</a></p>
@@ -36,16 +48,19 @@ const altPerMonth = tool.starting_price_alt_usd;
       Prices on this page are being re-verified. The figures below are what the vendor's page showed on {priceDate}. They are not confirmed.
     </div>
   )}
+  <p>{priceViewNote(tool)}</p>
+  {priceNote && <p class="flag" role="note"><strong>Price note:</strong> {priceNote}</p>}
+  {unvNote && <p class="flag" role="note"><strong>Ranking note:</strong> {unvNote}</p>}
   <div class="tablewrap">
     <table>
       <thead><tr><th>Field</th><th>{verified ? 'Value' : 'Value as read (not confirmed)'}</th><th>Source and date</th></tr></thead>
       <tbody>
         <FieldRow label="Cheapest paid plan" field="starting_price_plan" tool={tool} evidence={evidence} />
-        <FieldRow label="Price, billed monthly (USD)" field="starting_price_usd" tool={tool} evidence={evidence} kind="money" />
-        <FieldRow label="Billing for that price" field="starting_price_billing" tool={tool} evidence={evidence} />
-        <FieldRow label="Price unit" field="price_unit" tool={tool} evidence={evidence} />
-        <FieldRow label="Price, billed annually (USD per month)" field="starting_price_alt_usd" tool={tool} evidence={evidence} kind="money" />
-        <FieldRow label="Billing for the annual price" field="starting_price_alt_billing" tool={tool} evidence={evidence} />
+        <FieldRow label={priceLabel} field="starting_price_usd" tool={tool} evidence={evidence} kind="money" />
+        <FieldRow label="Billing for the default-view price" field="starting_price_billing" tool={tool} evidence={evidence} />
+        <FieldRow label="Price unit as displayed" field="price_unit" tool={tool} evidence={evidence} />
+        <FieldRow label={altLabel} field="starting_price_alt_usd" tool={tool} evidence={evidence} kind="money" />
+        <FieldRow label={altBillingLabel} field="starting_price_alt_billing" tool={tool} evidence={evidence} />
         <FieldRow label="Credit system" field="credit_system" tool={tool} evidence={evidence} />
       </tbody>
     </table>

@@ -49,6 +49,7 @@ export function show(v: string): string {
   if (v === 'no') return 'No';
   if (v === 'trial_only') return 'Trial only (no free plan published)';
   if (v === 'per_user_month') return 'per user per month';
+  if (v === 'per_user_year') return 'per user per year';
   if (v === 'flat_month') return 'flat price per month';
   if (v === 'monthly') return 'billed monthly';
   if (v === 'annual') return 'billed annually';
@@ -137,3 +138,57 @@ export function useCasesUpdated(list: UseCase[]): string {
   return list.map((u) => u.fetched).sort().slice(-1)[0];
 }
 export const shownDate = (d: string) => (/^\d{4}-/.test(d) ? prettyDate(d) : 'no date shown');
+
+
+// ---- Visible notes (computed from data where possible) ----
+export const PRICE_NOTES: Record<string, string> = {
+  synthesia: 'Open item: one earlier check reported a "Start Starter - $29/mo" button. The 2026-10-16 live check found no such button in either billing view (Starter shows $19 monthly, $14 per month billed yearly). Not confirmed either way.',
+  kapwing: 'The pricing page prints no billing period next to the $16 shown in its default Annual view, only "1,000 credits / month" and the Annual toggle. The Monthly view shows $24 for the same plan and limit.',
+};
+const NUM_WORDS = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+// Sentence for a tool with many unverified criteria, built from ranking.json (null when 3 or fewer).
+export function unverifiedNote(rt: any): string | null {
+  if (!rt) return null;
+  const unv = rt.criteria.filter((c: any) => !c.checked);
+  if (unv.length < 4) return null;
+  const list = unv.map((c: any) => c.criterion.replace(/_/g, ' ')).join(', ');
+  return `${NUM_WORDS[unv.length]} of ${rt.tool_name}'s ${NUM_WORDS[rt.criteria.length].toLowerCase()} criteria are unverified (${list}); its total is a floor, not a measured score.`;
+}
+export function priceViewNote(tool: Record<string, string>): string {
+  const view = tool.starting_price_billing === 'annual' ? 'annual (yearly)' : 'monthly';
+  const other = tool.starting_price_alt_billing === 'monthly' ? 'monthly' : tool.starting_price_alt_billing === 'annual' ? 'annual (yearly)' : '';
+  return other
+    ? `Recorded from the page's default view (${view}). The ${other} view's price is shown in the second price row.`
+    : `Recorded from the page's default view (${view}); the plan has no other billing view.`;
+}
+
+// "New this week": added to our feed (fetched date) within 7 days of the latest fetch date.
+export function isNewThisWeek(u: UseCase, updated: string): boolean {
+  const cutoff = new Date(updated + 'T00:00:00Z').getTime() - 7 * 86400000;
+  return new Date(u.fetched + 'T00:00:00Z').getTime() > cutoff;
+}
+
+
+// ---- Directory (home page): groups come from primary_job in tools.csv, nothing else ----
+export const TOOL_GROUPS = [
+  { id: 'text-to-video', name: 'Text-to-video', jobs: ['text-to-video'] },
+  { id: 'general-editors', name: 'General video editors', jobs: ['general editor'] },
+  { id: 'ai-presenters', name: 'AI presenters (avatar)', jobs: ['AI presenter (avatar)'] },
+  { id: 'clipping', name: 'Video clipping', jobs: ['AI video clipping (long video to short clips)'] },
+];
+export const groupOf = (t: Record<string, string>) => TOOL_GROUPS.find((g) => g.jobs.includes(t.primary_job)) ?? TOOL_GROUPS[0];
+
+export interface Release { toolId: string; title: string; date: string; sourceName: string; sourceUrl: string }
+// Releases come only from src/data/releases.csv (tool_id,title,date,source_name,source_url). A row needs an https source and an ISO date.
+export function loadReleases(): Release[] {
+  let text = '';
+  try { text = readFileSync(join(dir, 'releases.csv'), 'utf-8'); } catch { return []; }
+  return parseCsv(text)
+    .filter((r) => /^\d{4}-\d{2}-\d{2}$/.test(r.date ?? '') && (r.source_url ?? '').startsWith('https://') && r.title && r.tool_id)
+    .map((r) => ({ toolId: r.tool_id, title: r.title, date: r.date, sourceName: r.source_name, sourceUrl: r.source_url }))
+    .sort((a, b) => b.date.localeCompare(a.date));
+}
+export function releasesThisWeek(list: Release[], ref: string): Release[] {
+  const cutoff = new Date(ref + 'T00:00:00Z').getTime() - 7 * 86400000;
+  return list.filter((r) => { const d = new Date(r.date + 'T00:00:00Z').getTime(); return d > cutoff && d <= new Date(ref + 'T00:00:00Z').getTime(); });
+}

@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+import UseCaseCard from '../../components/UseCaseCard.astro';
+import { loadUseCases, useCasesUpdated, prettyDate, isNewThisWeek } from '../../lib/data';
+const all = loadUseCases();
+const updated = useCasesUpdated(all);
+const fresh = all.filter((u) => isNewThisWeek(u, updated));
+---
+<Base title="Real AI use cases for businesses, with public sources | ScaleStack Tech" description="A feed of real ways businesses use AI in sales, marketing, operations, support and CRM. Each card links to the public page where it was reported and is summarised in our own words.">
+  <div class="topbar" slot="topbar">
+    <div class="search" role="search">
+      <label for="q" class="vh">Search use cases by title, summary or tool</label>
+      <input id="q" type="search" placeholder="Search use cases by title, summary or tool" autocomplete="off" />
+    </div>
+    <div class="seg" role="group" aria-label="Sort order">
+      <button type="button" data-sort="new" aria-pressed="true">New</button>
+      <button type="button" data-sort="az" aria-pressed="false">A to Z</button>
+    </div>
+  </div>
+
+  <h1>Real AI use cases for businesses, each with its public source.</h1>
+  <p class="lede">Every card summarises, in our own words, a page that a company or vendor has published about how it uses AI. We read the page and link it. We have not run these setups ourselves, and results quoted by sources are left out.</p>
+
+  <div class="pillbar">
+    <ul class="pills" id="pills" aria-label="Filter feed">
+      <li><button type="button" class="pill" data-pill="all" aria-pressed="true">All <span class="count">{all.length}</span></button></li>
+      <li><button type="button" class="pill" data-pill="new" aria-pressed="false" title="Added to this feed within 7 days of the last update">New this week <span class="count">{fresh.length}</span></button></li>
+    </ul>
+    <p class="stamp"><span id="feed-count">{all.length}</span> shown · Updated {prettyDate(updated)} · <a href="/methodology/#use-cases">How we pick use cases</a> · <a href="/rss.xml">RSS feed</a></p>
+  </div>
+  <p id="search-status" class="src" aria-live="polite"></p>
+  <ul id="search-results" class="cards"></ul>
+
+  <p id="feed-empty" class="note" hidden>No use case matches that filter.</p>
+  <ul class="feed" id="feed">
+    {all.map((u, i) => <UseCaseCard uc={u} idx={i} isNew={isNewThisWeek(u, updated)} />)}
+  </ul>
+  <p class="src">Ten AI video makers also have <a href="/tools/">their own pages</a>; tool names on each card link there when a page exists.</p>
+
+  <aside class="agency" aria-label="About Prospecly">
+    <h2>Work with Prospecly, ScaleStack's own agency</h2>
+    <p><a href="/services/">Prospecly services</a></p>
+    <p><strong>Not part of the use case feed or the rankings.</strong></p>
+  </aside>
+  <script is:inline src="/search.js" defer></script>
+  <script is:inline src="/feed.js" defer></script>
+</Base>

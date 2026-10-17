@@ -1,61 +1,61 @@
-tool_id,criterion,score,evidence_url,evidence_quote
-fliki,output_quality,0,,UNVERIFIED: not yet checked
-fliki,price_value,0,,UNVERIFIED: not yet checked
-fliki,ease_of_use,0,,UNVERIFIED: not yet checked
-fliki,free_tier,3,https://fliki.ai/pricing,Includes Fliki watermark
-fliki,fit,0,,UNVERIFIED: not yet checked
-fliki,update_pace,0,,UNVERIFIED: not yet checked
-invideo-ai,output_quality,0,,UNVERIFIED: not yet checked
-invideo-ai,price_value,0,,UNVERIFIED: not yet checked
-invideo-ai,ease_of_use,0,,UNVERIFIED: not yet checked
-invideo-ai,free_tier,0,,UNVERIFIED: not yet checked
-invideo-ai,fit,0,,UNVERIFIED: not yet checked
-invideo-ai,update_pace,0,,UNVERIFIED: not yet checked
-veed,output_quality,0,,UNVERIFIED: not yet checked
-veed,price_value,0,,UNVERIFIED: not yet checked
-veed,ease_of_use,0,,UNVERIFIED: not yet checked
-veed,free_tier,0,,UNVERIFIED: not yet checked
-veed,fit,0,,UNVERIFIED: not yet checked
-veed,update_pace,0,,UNVERIFIED: not yet checked
-kapwing,output_quality,0,,UNVERIFIED: not yet checked
-kapwing,price_value,0,,UNVERIFIED: not yet checked
-kapwing,ease_of_use,0,,UNVERIFIED: not yet checked
-kapwing,free_tier,3,https://www.kapwing.com/pricing,Unlimited exports with a watermark
-kapwing,fit,0,,UNVERIFIED: not yet checked
-kapwing,update_pace,0,,UNVERIFIED: not yet checked
-descript,output_quality,0,,UNVERIFIED: not yet checked
-descript,price_value,0,,UNVERIFIED: not yet checked
-descript,ease_of_use,0,,UNVERIFIED: not yet checked
-descript,free_tier,0,,UNVERIFIED: not yet checked
-descript,fit,0,,UNVERIFIED: not yet checked
-descript,update_pace,0,,UNVERIFIED: not yet checked
-heygen,output_quality,0,,UNVERIFIED: not yet checked
-heygen,price_value,0,,UNVERIFIED: not yet checked
-heygen,ease_of_use,0,,UNVERIFIED: not yet checked
-heygen,free_tier,3,https://www.heygen.com/pricing,Videos up to 1 min
-heygen,fit,0,,UNVERIFIED: not yet checked
-heygen,update_pace,0,,UNVERIFIED: not yet checked
-synthesia,output_quality,0,,UNVERIFIED: not yet checked
-synthesia,price_value,0,,UNVERIFIED: not yet checked
-synthesia,ease_of_use,0,,UNVERIFIED: not yet checked
-synthesia,free_tier,3,https://www.synthesia.io/pricing,Videos carry a Synthesia watermark
-synthesia,fit,0,,UNVERIFIED: not yet checked
-synthesia,update_pace,0,,UNVERIFIED: not yet checked
-pictory,output_quality,0,,UNVERIFIED: not yet checked
-pictory,price_value,0,,UNVERIFIED: not yet checked
-pictory,ease_of_use,0,,UNVERIFIED: not yet checked
-pictory,free_tier,3,https://pictory.ai/pricing/,"With our free trial, you can create 3 video projects"
-pictory,fit,0,,UNVERIFIED: not yet checked
-pictory,update_pace,0,,UNVERIFIED: not yet checked
-opusclip,output_quality,0,,UNVERIFIED: not yet checked
-opusclip,price_value,0,,UNVERIFIED: not yet checked
-opusclip,ease_of_use,0,,UNVERIFIED: not yet checked
-opusclip,free_tier,3,https://www.opus.pro/pricing,Has watermark
-opusclip,fit,0,,UNVERIFIED: not yet checked
-opusclip,update_pace,0,,UNVERIFIED: not yet checked
-zebracat,output_quality,0,,UNVERIFIED: not yet checked
-zebracat,price_value,0,,UNVERIFIED: not yet checked
-zebracat,ease_of_use,0,,UNVERIFIED: not yet checked
-zebracat,free_tier,3,https://www.zebracat.ai/pricing,maximum length of 30 seconds per video
-zebracat,fit,0,,UNVERIFIED: not yet checked
-zebracat,update_pace,0,,UNVERIFIED: not yet checked
+tool_id,criterion,score,evidence_url,evidence_quote,retrieved_date,evidence_extra
+fliki,output_quality,3,https://fliki.ai/pricing,Full HD - 1080p videos; Videos upto 15 minutes,2026-10-16, || NOTE: Standard: 1080p + 15 min. Not 5: no export formats/aspect ratios listed on the page
+fliki,price_value,3,https://fliki.ai/pricing,"Standard | ""$28 $21"" ($28 struck) | ""per user / month · $252 billed annually"" | ""2160 credits per year""",2026-10-16,"Standard | ""$28"" | ""per user / month · No commitment, cancel anytime"" | ""180 credits per month"" || NOTE: R2c: DEFAULT view (Yearly; page settles on Yearly after ~15 s). $21 per user / month billed annually, 2160 credits per year. Monthly view $28, 180 credits per month in evidence_extra. Credits only; no minutes"
+fliki,ease_of_use,0,https://fliki.ai/pricing,"UNVERIFIED: R2b recheck 2026-10-16 (raw6/fliki_templates, raw7/fliki_templates): fliki.ai/templates is HTTP 404 (curl and browser, 'Page not found'); nav is Features, Use cases, Explore (/guide), Pricing. /use-cases shows filter chips and cards (Avatar, Training, UGC ad, Music video, Explainer) but is not a template gallery",2026-10-16,
+fliki,free_tier,3,https://fliki.ai/pricing,Includes Fliki watermark,2026-10-16, || NOTE: free plan with watermark; 5 needs no-watermark statement
+fliki,fit,3,https://fliki.ai/,"Upload a product photo and pick a look, and Fliki writes the copy and designs ready-to-run ads",2026-10-16,"AI voiceover, stock or AI-generated visuals, and auto-captions || Yes, with our subscription plans you get a commercial license to all the content you create. || NOTE: 3/4: upload, captions, commercial. Vertical 9:16 export not shown (only 'Resize one video into vertical')"
+fliki,update_pace,5,https://fliki.ai/whats-new,"Video podcast maker Oct 9, 2026",2026-10-16,"Directed voiceover Oct 7, 2026 || Social carousel maker v2 Sep 28, 2026 || NOTE: R2b: fliki.ai/whats-new (HTTP 200, footer 'What's new') lists dated product entries Oct 9, 2026 (Video podcast maker), Oct 7 (Directed voiceover), Sep 28 (Social carousel maker v2), Sep 22 (Motion graphics explainer videos) and Sep 14, 2026 (Music videos): all inside 90 days of 2026-10-16, 2 needed for 5. /templates is HTTP 404"
+invideo-ai,output_quality,0,https://invideo.io/pricing,UNVERIFIED: rendered pricing page states no export resolution or max video length for any paid plan,2026-10-16,
+invideo-ai,price_value,3,https://invideo.io/pricing,"STARTER | ""400 credits/mo."" | ""$20"" (struck) ""$10"" | ""per seat/mo, billed annually""",2026-10-16,"STARTER | ""400 credits/mo."" | ""$20"" | ""per seat/mo, billed monthly"" || NOTE: R2c: DEFAULT view (Annual): $10 per seat/mo billed annually, 400 credits/mo.; monthly view $20 per seat/mo billed monthly. Credits only"
+invideo-ai,ease_of_use,3,https://invideo.io/,The agentic video editor for serious creatives,2026-10-16,"Explore Unlimited invideo Templates! || NOTE: product page + public templates page. No help article fetched, so not 5"
+invideo-ai,free_tier,0,https://invideo.io/pricing,UNVERIFIED: rendered pricing shows no free plan card and no free trial,2026-10-16,
+invideo-ai,fit,3,https://invideo.io/,Upload footage to your first project,2026-10-16,"We also grant you a perpetual, irrevocable, worldwide, royalty-free, non-exclusive licence to use, reproduce, modify, distribute, perform, display and commercialise Outputs you generate through the Services. || NOTE: 2/4: upload, commercial. No auto captions or 9:16 quote"
+invideo-ai,update_pace,0,https://invideo.io/pricing,UNVERIFIED: blog is guides and model explainers; no changelog or product-update entries found (invideo.io/changelog 404),2026-10-16,
+veed,output_quality,0,https://www.veed.io/pricing,"UNVERIFIED: R2 recheck 2026-10-16 (raw6/veed_pricing): rendered pricing lists credits, 'No watermark' and AI tools only; no export resolution or max video length for any plan",2026-10-16,
+veed,price_value,3,https://www.veed.io/pricing,"Creator $147 per user / year, 6,000 Credits · ~1,500 AI Videos",2026-10-16,"Creator $25 per user / month, 500 Credits · ~125 AI Videos || NOTE: R2b: yearly DEFAULT view is the record ($147 per user / year, 6,000 credits per year); monthly toggle view $25 per user / month, 500 credits per month is the extra quote. Credits and ~AI videos, no minutes; price per minute not re-scored"
+veed,ease_of_use,0,https://www.veed.io/pricing,"UNVERIFIED: R2 recheck 2026-10-16 (raw6/veed_templates, veed_pricing): /templates redirects to the home page, so no public template gallery; pricing page has no editor description (only 'Custom Templates' on Studio)",2026-10-16,
+veed,free_tier,0,https://www.veed.io/pricing,"UNVERIFIED: R2 recheck 2026-10-16 (raw6/veed_pricing): no Free plan card; 'Start for free, upgrade to get powerful features.' is not a published free plan with watermark or caps; trial FAQ answer not expanded",2026-10-16,
+veed,fit,0,https://www.veed.io/pricing,"UNVERIFIED: R2 recheck 2026-10-16 (raw6/veed_pricing): only 1 of 4 fit features shown ('Unlimited Auto Subtitles' on Creator); no upload, 9:16 or commercial-use text, so below the 2-feature anchor",2026-10-16,
+veed,update_pace,0,https://www.veed.io/pricing,"UNVERIFIED: R2b recheck 2026-10-16 (raw6/veed_changelog, raw7/veed_updates): veed.io/updates: HTTP 200; empty page body, then redirected to https://www.veed.io/login after 10 seconds; no dated entries. Footer has no changelog link and /blog listing shows no dates",2026-10-16,
+kapwing,output_quality,3,https://www.kapwing.com/pricing,Export content in 4K resolution; Create and edit unlimited projects; Export projects up to 2 hours long,2026-10-16, || NOTE: Pro: 4K + 2 hours. Not 5: no export formats/aspect ratios listed
+kapwing,price_value,3,https://www.kapwing.com/pricing,"Pro | ""1,000 credits / month"" | ""$"" ""16""",2026-10-16,"Toggle: ""BILLING"" / ""Monthly"" / ""Annual"" / ""SAVE 33%"" || Pro | ""1,000 credits / month"" | ""$"" ""24"" || NOTE: R2c: DEFAULT view (Annual): the page prints no period or billing line next to the $16, only '1,000 credits / month' and the Annual toggle; both views quoted together. Monthly view $24 with 1,000 credits / month CONFIRMED 2026-10-16. Credits only"
+kapwing,ease_of_use,3,https://www.kapwing.com/,"Video Editor Edit video clips, combine tracks together, and add effects all in one place",2026-10-16,"Free Templates — Customizable And Online — Kapwing || NOTE: product page + public template gallery. No help article fetched, so not 5"
+kapwing,free_tier,3,https://www.kapwing.com/pricing,Unlimited exports with a watermark,2026-10-16, || NOTE: free plan with watermark
+kapwing,fit,3,https://www.kapwing.com/pricing,Upload files up to 6 GB,2026-10-16,"Auto-subtitling (up to 1,000 mins / month) || NOTE: 2/4: upload, captions. No 9:16 or commercial-use text"
+kapwing,update_pace,3,https://www.kapwing.com/help/tag/release-notes/,Release Notes - August 2026,2026-10-16,"Release Notes - Kapwing MCP || Release Notes - June 2026 || Release Notes - July 2026 || Release Notes - May 2026 || Release Notes - April 2026 || Release Notes - March 2026 || Release Notes - February 2026 || Kapwing January 2026 Release Notes || Kapwing December 2025 Release Notes || NOTE: R2b: page shows NO date text; month and year appear only inside the titles (month only, no day-level date), so dates come from titles. Aug 2026 title is inside 6 months of 2026-10-16, giving 3; 5 is not possible because no day-level date can prove 2 entries after 2026-07-18. Page 1 of 7; titles in page order: Kapwing MCP; August 2026; June 2026; July 2026; May 2026; April 2026; March 2026; February 2026; January 2026; December 2025. HTTP: kapwing.com/updates shows Page not found in the browser (404) although curl returned 200; release notes URL loads"
+descript,output_quality,0,https://www.descript.com/pricing,UNVERIFIED: pricing lists 1080p/4K export but no max export video length (only web link duration and media minutes),2026-10-16,
+descript,price_value,3,https://www.descript.com/pricing,"Hobbyist | ""$16"" | ""per person / month"" | ""1 person included"" | ""10 media hours / month""",2026-10-16,"Hobbyist | ""$24"" | ""per person / month"" || NOTE: R2c: DEFAULT view (Annual): $16 per person / month, 10 media hours / month; monthly view $24. Media hours (processed media), not clearly published video minutes; see price-per-minute table (not re-scored)"
+descript,ease_of_use,3,https://www.descript.com/,Editing video in Descript is as easy as using docs and slides.,2026-10-16,"Free AI Video Templates - Made in Descript || NOTE: product page + public template page. No help article fetched, so not 5"
+descript,free_tier,3,https://www.descript.com/pricing,Media minutes 60 minutes (1 hr) / month,2026-10-16, || NOTE: free plan cap 60 min/month; watermark on free unverified
+descript,fit,0,https://www.descript.com/pricing,UNVERIFIED: only 1-2 of 4 fit features quoted (upload); captions text not clearly automatic; no 9:16 or commercial-use text,2026-10-16,
+descript,update_pace,5,https://descript.canny.io/changelog,"Release roundup—October 12, 2026",2026-10-16,"Release roundup—September 17, 2026 || NOTE: entries dated 2026-10-12, 2026-09-17 (and 2026-08-05) are within 90 days of 2026-10-16"
+heygen,output_quality,3,https://www.heygen.com/pricing,Videos up to 30 mins; 1080p video export,2026-10-16, || NOTE: Creator: 1080p + 30 min. Not 5: no export formats/aspect ratios named
+heygen,price_value,3,https://www.heygen.com/pricing,"Creator | ""$29 / mo"" | (no billed line) | ""600 credits""",2026-10-16,"Creator | ""$24 / mo$29"" ($29 struck) | ""$288 billed yearly"" | ""600 credits"" || NOTE: R2c: DEFAULT view is Monthly: $29 / mo, 600 credits (no period printed beside credits; judgment call). Yearly view $24 / mo, $288 billed yearly in evidence_extra"
+heygen,ease_of_use,0,https://www.heygen.com/pricing,UNVERIFIED: /templates redirected to another page; public template gallery not confirmed,2026-10-16,
+heygen,free_tier,3,https://www.heygen.com/pricing,3 videos per month; Videos up to 1 min,2026-10-16, || NOTE: free plan caps; watermark unverified
+heygen,fit,3,https://www.heygen.com/,Upload a short clip or reference image,2026-10-16,"Brand Kit, auto captions, and B-roll deliver finished videos || does not restrict your ability to use User Output for your own purposes (including for commercial purposes) || NOTE: 3/4: upload, captions, commercial (Creator/Pro/Business). No 9:16 shown"
+heygen,update_pace,3,https://www.heygen.com/blog,"Product Updates Published August 11th, 2026 Introducing HeyGen for Real Estate",2026-10-16," || NOTE: one Product Updates post dated 2026-08-11 (66 days before check date); only 1 dated entry in the last 90 days, so not 5"
+synthesia,output_quality,0,https://www.synthesia.io/pricing,UNVERIFIED: rendered pricing shows 'Video length Up to 3 minutes' but no export resolution for a named paid plan,2026-10-16,
+synthesia,price_value,3,https://www.synthesia.io/pricing,"""$14 per month"" | ""15,000 CREDITS / YEAR""",2026-10-16,"Starter | ""Billed monthly."" | ""$19 per month"" | ""1,250 CREDITS / MONTH"" || NOTE: R2c: DEFAULT view (Yearly): $14 per month, 15,000 credits per year. Monthly view $19 per month, 1,250 credits per month. Open item: earlier '$29 Starter button' report not found in either view on 2026-10-16; not confirmed either way. The '$19Billed yearly.' text is ambiguous (struck list price per the capture)"
+synthesia,ease_of_use,0,https://www.synthesia.io/pricing,UNVERIFIED: no editor + public template library description found in fetched pages (video examples page only),2026-10-16,
+synthesia,free_tier,3,https://www.synthesia.io/pricing,Videos carry a Synthesia watermark,2026-10-16, || NOTE: free Basic plan with watermark
+synthesia,fit,0,https://www.synthesia.io/pricing,"UNVERIFIED: only 1 of 4 fit features quoted (upload own footage); no captions, 9:16 or commercial-use text",2026-10-16,
+synthesia,update_pace,5,https://www.synthesia.io/updates,"Add burned-in captions to dubbed videos in one click, so your localized content stays accessible and easy to follow, even with sound off. 9/30/2026",2026-10-16,"Upload WebP images to your videos Bring WebP files straight into the editor—use still or animated WebP on the canvas, keep transparency, and skip manual file conversions. 9/29/2026 || NOTE: entries dated 9/30/2026 and 9/29/2026 (plus 8 more in Sep 2026)"
+pictory,output_quality,0,https://pictory.ai/pricing,"UNVERIFIED: rendered compare table lists 1080p and max length but its column headers are not in the rendered text, so no named plan",2026-10-16,
+pictory,price_value,3,https://pictory.ai/pricing,"Starter | ""$25 $29"" ($29 struck) | ""per month, billed annually"" | ""2,400 minutes yr""",2026-10-16,"Starter | ""$29"" | ""per month"" | ""200 video minutes"" || NOTE: R2c: DEFAULT view (Annual): $25 per month billed annually, 2,400 minutes per year; monthly view $29, 200 video minutes. Price per minute not re-scored (see table)"
+pictory,ease_of_use,3,https://pictory.ai/,Edit videos faster with Gen AI-powered video editing,2026-10-16,"Video Templates, search to find a template that suits your needs. || NOTE: product page + public templates page. No help article fetched, so not 5"
+pictory,free_tier,3,https://pictory.ai/pricing,"With our free trial, you can create 3 video projects",2026-10-16,"""Start Free 14-day Trial"" || NOTE: free trial with 3-project cap (cap sentence from static fetch; trial button in rendered text)"
+pictory,fit,3,https://pictory.ai/,automatic captions,2026-10-16,"Portrait - 9:16 || NOTE: 2/4: captions, 9:16. No upload-video/photo or commercial-use quote"
+pictory,update_pace,0,https://pictory.ai/pricing,UNVERIFIED: no changelog URL found (release-notes 404); blog has no dated product entries in fetched text,2026-10-16,
+opusclip,output_quality,0,https://www.opus.pro/pricing,UNVERIFIED: rendered pricing gives 1080p only for the Free plan; no paid plan length/resolution,2026-10-16,
+opusclip,price_value,3,https://www.opus.pro/pricing,"Starter | ""$15 USD/mo"" | ""Starter plan only available in monthly"" | ""$15 billed monthly "" | ""150 credits "" "" per month""",2026-10-16, || NOTE: R2c: same in both views (Starter monthly-only); credits only
+opusclip,ease_of_use,0,https://www.opus.pro/pricing,UNVERIFIED: only brand templates mentioned; no public template gallery (opus.pro/templates 404),2026-10-16,
+opusclip,free_tier,3,https://www.opus.pro/pricing,"""Has watermark""",2026-10-16, || NOTE: free plan with watermark
+opusclip,fit,5,https://www.opus.pro/,Or upload videos after signing up,2026-10-16,"OpusClip automatically adds captions for you with over 97% accuracy! || Various aspect ratios 9:16 | 9:16 | 9:16, 1:1, 16:9 || if you are a user of Paid Services, you are licensed to use the Services for commercial uses || Advertisers Create high-performing ad creatives at scale || NOTE: 4/4 features + ad creation named"
+opusclip,update_pace,0,https://www.opus.pro/pricing,UNVERIFIED: no changelog URL found (changelog/release-notes 404); blog text has no dates,2026-10-16,
+zebracat,output_quality,3,https://www.zebracat.ai/pricing,Compare (Cat Mode/Super Cat/Unlimited Cat/Enterprise): Videos per Month 15/40/Unlimited/Unlimited; Video Length Limit 2 min/5 min/5 min/5 min; Free Edits per video 3/3/5/Unlimited; Export Resolution 1080p all,2026-10-16, || NOTE: Cat Mode: 1080p + 2 min (plan names in the header of the same row; column mapping by order)
+zebracat,price_value,3,https://www.zebracat.ai/pricing,"Cat Mode | ""$39 $23/mo"" ($39 struck) | ""Billed yearly"" | ""15 videos / mo""",2026-10-16,"Cat Mode | ""$39/mo"" | ""Billed monthly"" | ""15 videos / mo"" || NOTE: R2c: DEFAULT view (Yearly): $23/mo billed yearly, 15 videos / mo; monthly view $39/mo. Videos per month; no minutes stated"
+zebracat,ease_of_use,0,https://www.zebracat.ai/pricing,UNVERIFIED: no template library found on the home page; /templates returned 404,2026-10-16,
+zebracat,free_tier,0,https://www.zebracat.ai/pricing,UNVERIFIED: rendered pricing shows no free plan card (static fetch mentioned a free plan; not relied on),2026-10-16,
+zebracat,fit,3,https://www.zebracat.ai/,Upload one photo and get a finished video back,2026-10-16,"Add accurate captions to every video automatically || NOTE: 2/4: photo upload, captions"
+zebracat,update_pace,0,https://www.zebracat.ai/pricing,UNVERIFIED: no changelog URL found (changelog/updates 404); blog posts are marketing articles,2026-10-16,

@@ -1,0 +1,20 @@
+---
+import { prettyDate } from '../lib/data';
+interface Props { tool: Record<string, string>; group: { id: string; name: string }; uses: number }
+const { tool, group, uses } = Astro.props;
+const initials = tool.tool_name.split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
+const text = `${tool.tool_name} ${tool.description} ${tool.primary_job}`.toLowerCase();
+---
+<li class="dir-card" data-id={tool.tool_id} data-group={group.id} data-text={text}>
+  <span class="tbadge big" aria-hidden="true">{initials}</span>
+  <div class="dir-body">
+    <h3><a href={`/tools/${tool.tool_id}/`}>{tool.tool_name}</a></h3>
+    <p class="sum">{tool.description}.</p>
+    <ul class="uc-tools" aria-label="Details">
+      <li><span class="tchip">{group.name}</span></li>
+      <li><span class="tchip">{tool.test_status}</span></li>
+      {uses > 0 && <li><a class="tchip" href={`/use-cases/?tool=${encodeURIComponent(tool.tool_name.toLowerCase())}`}>{uses} use {uses === 1 ? 'case' : 'cases'}</a></li>}
+    </ul>
+    <p class="src">Source: <a href={tool.description_source_url} rel="nofollow noopener">vendor page, read {prettyDate(tool.description_retrieved_date)}</a>. Last checked {prettyDate(tool.last_checked)}.</p>
+  </div>
+</li>

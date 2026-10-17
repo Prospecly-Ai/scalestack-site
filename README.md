@@ -17,7 +17,7 @@ The site is a static [Astro](https://astro.build) build. It has no analytics, no
 | `src/data/use_cases.csv` | One row per use case: id, title, summary, category, tools, `tools_with_pages` (tool_ids that have a page), source_name, source_url, source_date (date shown on the page or `no date shown`), fetched_date, own_words_check, notes. Drives the home feed, `/use-cases/<category>/`, search and RSS. |
 | `scripts/check_use_cases.py` | `python3 scripts/check_use_cases.py`: needs 30+ rows and 5+ per category, a source_url and fetched_date on every row, no duplicate URLs, no agentusecases.ai source, banned words, result-claim words in title/summary flagged, one-sentence summary. |
 | `src/data/categories.json` | Category list for browsing. Only AI video makers is live; the others show "coming soon" with a count of 0. |
-| `src/pages/` | Home, methodology, rankings (`/best/`, `/best/ai-video-makers/`), tool pages (`/tools/<id>/`), 404. |
+| `src/pages/` | Home (AI video maker directory), use case feed (`/use-cases/`), methodology, rankings (`/best/`, `/best/ai-video-makers/`), tool pages (`/tools/<id>/`), 404. |
 | `src/pages/rss.xml.ts` | RSS 2.0 feed at `/rss.xml`, built from use cases (item date = `fetched_date`) and tool records (`date_added`). |
 | `src/pages/search.json.ts` | Static search index at `/search.json`, covers use cases and tools, read by `public/search.js` in the visitor's browser. `public/feed.js` runs the home page category/tool chips and search filter. |
 | `src/components/` | `ToolCard.astro` (card with summary, score or "Score pending", source link and date), `Search.astro`, `FieldRow.astro`. |
@@ -68,3 +68,12 @@ Vercel builds this repo through its GitHub integration. Framework preset: Astro.
 ## Corrections
 
 hello@scalestacktech.co
+
+## Data notes (price views)
+
+- VEED price recorded from the page DEFAULT view (Pay yearly) on 2026-10-16; monthly toggle shows $25/user/month, 500 credits; earlier round-2 row used the monthly toggle view in error. VEED is therefore stored as `starting_price_usd` 147, `starting_price_billing` annual, `price_unit` per_user_year, with the monthly toggle price in the alt pair (`starting_price_alt_usd` 25, `starting_price_alt_billing` monthly). The tool page labels follow the stored billing period. Credit limit: 6,000 credits per year on Creator (yearly view); 500 credits per month (monthly view). `price_live_verified` stays false.
+- The full per-tool notes live in `field_notes` of the builder output (`/workspace/scalestack/data/tools.csv`); this site CSV has no `field_notes` column.
+
+### Price view rule (round 2c, 2026-10-16)
+
+All tools now follow the same rule: `starting_price_usd`, `starting_price_billing`, `price_unit` and the price_value evidence quote come from the page's DEFAULT view on first load, and the other view goes in the alt fields. Defaults: yearly/annual for VEED, Fliki, invideo AI, Kapwing, Descript, Synthesia, Pictory and Zebracat; monthly for HeyGen; OpusClip Starter is monthly-only. The per-month figure is used only where the page prints a per-month price; Kapwing prints no period next to its $16, so its price unit is UNVERIFIED. Synthesia has an open item: an earlier report of a "Start Starter - $29/mo" button was not found in either view on 2026-10-16 (not confirmed either way). `price_live_verified` stays false for every tool.

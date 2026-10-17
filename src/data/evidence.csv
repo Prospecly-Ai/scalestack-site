@@ -9,11 +9,13 @@ fliki,description,https://fliki.ai/pricing,fliki_pricing.txt,"Create videos from
 fliki,description,https://fliki.ai/pricing,fliki_pricing.txt,"Create studio-quality videos from scripts, ideas, and long-form content in minutes with lifelike voices."
 fliki,starting_price_plan,https://fliki.ai/pricing,raw2/fliki_pricing_rendered.txt,Compare plans (Free/Standard/Premium)
 fliki,starting_price_plan,https://fliki.ai/pricing,raw2/fliki_pricing_rendered.txt,Standard (MOST POPULAR)
-fliki,starting_price_usd,https://fliki.ai/pricing,raw4/fliki_pricing_live.txt,"""Standard"" ""$28"" ""per user / month · No commitment, cancel anytime"""
-fliki,starting_price_billing,https://fliki.ai/pricing,raw2/fliki_pricing_rendered.txt,"MONTHLY: ""per user / month · No commitment, cancel anytime"""
-fliki,price_unit,https://fliki.ai/pricing,raw2/fliki_pricing_rendered.txt,per user / month
-fliki,starting_price_alt_usd,https://fliki.ai/pricing,raw4/fliki_pricing_live.txt,"""Standard"" ""$28 $21"" ""per user / month · $252 billed annually"""
-fliki,starting_price_alt_billing,https://fliki.ai/pricing,raw2/fliki_pricing_rendered.txt,"YEARLY: ""per user / month · $252 billed annually"""
+fliki,starting_price_usd,https://fliki.ai/pricing,raw8/fliki_pricing_2026-10-16.txt,"Standard | ""$28 $21"" ($28 struck) | ""per user / month · $252 billed annually"" | ""2160 credits per year"""
+fliki,starting_price_billing,https://fliki.ai/pricing,raw8/fliki_pricing_2026-10-16.txt,DEFAULT VIEW (Yearly)
+fliki,starting_price_billing,https://fliki.ai/pricing,raw8/fliki_pricing_2026-10-16.txt,"""per user / month · $252 billed annually"""
+fliki,price_unit,https://fliki.ai/pricing,raw8/fliki_pricing_2026-10-16.txt,"""per user / month · $252 billed annually"""
+fliki,starting_price_alt_usd,https://fliki.ai/pricing,raw8/fliki_pricing_2026-10-16.txt,"Standard | ""$28"" | ""per user / month · No commitment, cancel anytime"" | ""180 credits per month"""
+fliki,starting_price_alt_billing,https://fliki.ai/pricing,raw8/fliki_pricing_2026-10-16.txt,OTHER VIEW (Monthly)
+fliki,starting_price_alt_billing,https://fliki.ai/pricing,raw8/fliki_pricing_2026-10-16.txt,"""per user / month · No commitment, cancel anytime"""
 fliki,free_plan,https://fliki.ai/pricing,fliki_pricing.txt,Free forever plan
 fliki,free_plan,https://fliki.ai/pricing,fliki_pricing.txt,"Yes, Fliki offers a tier that allows users to explore text to voice and text to video features without any cost."
 fliki,free_plan_limits,https://fliki.ai/pricing,raw2/fliki_pricing_rendered.txt,3 credits per month
@@ -37,11 +39,13 @@ invideo-ai,description,https://invideo.io/pricing,invideo_pricing.txt,~ 15 Seeda
 invideo-ai,description,https://invideo.io/pricing,invideo_pricing.txt,160 Nano Banana Pro generations
 invideo-ai,description,https://invideo.io/pricing,invideo_pricing.txt,Timeline editor Full access
 invideo-ai,starting_price_plan,https://invideo.io/pricing,raw2/invideo_pricing_rendered.txt,STARTER (For first-time AI creators)
-invideo-ai,starting_price_usd,https://invideo.io/pricing,raw2/invideo_pricing_rendered.txt,"$20 per seat/mo, billed monthly"
-invideo-ai,starting_price_billing,https://invideo.io/pricing,raw2/invideo_pricing_rendered.txt,"$20 per seat/mo, billed monthly"
-invideo-ai,price_unit,https://invideo.io/pricing,raw2/invideo_pricing_rendered.txt,per seat/mo
-invideo-ai,starting_price_alt_usd,https://invideo.io/pricing,raw2/invideo_pricing_rendered.txt,"$20 $10 per seat/mo, billed annually"
-invideo-ai,starting_price_alt_billing,https://invideo.io/pricing,raw2/invideo_pricing_rendered.txt,"$20 $10 per seat/mo, billed annually"
+invideo-ai,starting_price_usd,https://invideo.io/pricing,raw8/invideo-ai_pricing_2026-10-16.txt,"STARTER | ""400 credits/mo."" | ""$20"" (struck) ""$10"" | ""per seat/mo, billed annually"""
+invideo-ai,starting_price_billing,https://invideo.io/pricing,raw8/invideo-ai_pricing_2026-10-16.txt,DEFAULT VIEW (Annual)
+invideo-ai,starting_price_billing,https://invideo.io/pricing,raw8/invideo-ai_pricing_2026-10-16.txt,"""per seat/mo, billed annually"""
+invideo-ai,price_unit,https://invideo.io/pricing,raw8/invideo-ai_pricing_2026-10-16.txt,"""per seat/mo, billed annually"""
+invideo-ai,starting_price_alt_usd,https://invideo.io/pricing,raw8/invideo-ai_pricing_2026-10-16.txt,"STARTER | ""400 credits/mo."" | ""$20"" | ""per seat/mo, billed monthly"""
+invideo-ai,starting_price_alt_billing,https://invideo.io/pricing,raw8/invideo-ai_pricing_2026-10-16.txt,OTHER VIEW (Monthly)
+invideo-ai,starting_price_alt_billing,https://invideo.io/pricing,raw8/invideo-ai_pricing_2026-10-16.txt,"""per seat/mo, billed monthly"""
 invideo-ai,free_plan,https://invideo.io/terms-and-conditions/,invideo_terms.txt,We offer a free tier with limited features
 invideo-ai,free_plan_limits,https://invideo.io/pricing,raw2/invideo_pricing_rendered.txt,No free plan card shown.
 invideo-ai,free_plan_watermark,https://invideo.io/pricing,raw2/invideo_pricing_rendered.txt,No watermark or commercial-use statements in rendered text.
@@ -51,21 +55,21 @@ invideo-ai,commercial_use_paid,https://invideo.io/terms-and-conditions/,invideo_
 invideo-ai,commercial_use_free,https://invideo.io/terms-and-conditions/,invideo_terms.txt,"(UNVERIFIED: page checked, answer not present in retrieved text)"
 invideo-ai,terms_url,https://invideo.io/terms-and-conditions/,invideo_terms.txt,Terms and Conditions Effective 8 July 2026
 invideo-ai,terms_date_shown,https://invideo.io/terms-and-conditions/,invideo_terms.txt,Effective 8 July 2026
-veed,field_notes,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,Creator $147 per user / year
-veed,field_notes,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,Pro (Recommended) $265 per user / year
+veed,field_notes,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,"Creator $25 per user / month, 500 Credits · ~125 AI Videos"
+veed,field_notes,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,"Pro $265 per user / year, 30,000 Credits · ~7,500 AI Videos"
 veed,tool_name,https://www.veed.io/pricing,veed_pricing.txt,VEED
 veed,canonical_url,https://www.veed.io,(self-sourced),self-sourced: canonical_url is the vendor homepage URL itself (see schema_notes.md)
 veed,primary_job,https://www.veed.io/pricing,veed_pricing.txt,"Everything you need to edit, convert, subtitle and transcribe video - fast, free to try and right in your browser."
 veed,description,https://www.veed.io/pricing,veed_pricing.txt,"Everything you need to edit, convert, subtitle and transcribe video - fast, free to try and right in your browser."
 veed,description,https://www.veed.io/pricing,veed_pricing.txt,"Generate videos, voices, avatars and images from a simple prompt."
-veed,starting_price_plan,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,Creator $25 per user / month
-veed,starting_price_usd,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,Creator $25 per user / month
-veed,starting_price_billing,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,=== MONTHLY ===
-veed,starting_price_billing,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,Creator $25 per user / month
-veed,price_unit,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,$25 per user / month
-veed,starting_price_alt_usd,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,Creator $147 per user / year
-veed,starting_price_alt_billing,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,=== YEARLY (default) ===
-veed,starting_price_alt_billing,https://www.veed.io/pricing,raw2/veed_pricing_rendered.txt,Creator $147 per user / year
+veed,starting_price_plan,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,Creator $147 per user / year
+veed,starting_price_usd,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,"Creator $147 per user / year, 6,000 Credits · ~1,500 AI Videos"
+veed,starting_price_usd,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,"DEFAULT: ""Pay yearly"" switch checked (yearly view)."
+veed,starting_price_billing,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,"DEFAULT: ""Pay yearly"" switch checked (yearly view)."
+veed,starting_price_billing,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,Creator $147 per user / year
+veed,price_unit,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,Creator $147 per user / year
+veed,starting_price_alt_usd,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,"Creator $25 per user / month, 500 Credits · ~125 AI Videos"
+veed,starting_price_alt_billing,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,MONTHLY (after toggling switch): Creator $25 per user / month
 veed,free_plan,https://www.veed.io/terms-of-use,veed_terms.txt,Where you use our Applications under a ‘Free’ subscription
 veed,free_plan_limits,https://www.veed.io/pricing,veed_pricing.txt,"(UNVERIFIED: page checked, answer not present in retrieved text)"
 veed,free_plan_watermark,https://www.veed.io/pricing,veed_pricing.txt,"(UNVERIFIED: page checked, answer not present in retrieved text)"
@@ -83,12 +87,12 @@ kapwing,description,https://www.kapwing.com/pricing,kapwing_pricing.txt,"Edit vi
 kapwing,description,https://www.kapwing.com/pricing,kapwing_pricing.txt,"Credits usable for: Auto-subtitling (up to 1,000 mins / month) Dubbing (up to 50 mins / month)"
 kapwing,description,https://www.kapwing.com/pricing,kapwing_pricing.txt,Text to speech (up to 1 mins)
 kapwing,starting_price_plan,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,"Pro (MOST POPULAR): 1,000 credits / month"
-kapwing,starting_price_usd,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,ANNUAL: $16 | MONTHLY: $24
-kapwing,starting_price_billing,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,ANNUAL: $16 | MONTHLY: $24
-kapwing,price_unit,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,(No per-unit/billing-period label in rendered text.)
-kapwing,starting_price_alt_usd,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,ANNUAL: $16 | MONTHLY: $24
-kapwing,starting_price_alt_billing,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,Monthly | Annual SAVE 33%
-kapwing,starting_price_alt_billing,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,ANNUAL: $16 | MONTHLY: $24
+kapwing,starting_price_usd,https://www.kapwing.com/pricing,raw8/kapwing_pricing_2026-10-16.txt,"Pro | ""1,000 credits / month"" | ""$"" ""16"""
+kapwing,starting_price_billing,https://www.kapwing.com/pricing,raw8/kapwing_pricing_2026-10-16.txt,DEFAULT VIEW (Annual)
+kapwing,starting_price_billing,https://www.kapwing.com/pricing,raw8/kapwing_pricing_2026-10-16.txt,"Toggle: ""BILLING"" / ""Monthly"" / ""Annual"" / ""SAVE 33%"""
+kapwing,price_unit,https://www.kapwing.com/pricing,raw8/kapwing_pricing_2026-10-16.txt,"No per-card ""billed annually/monthly"" fine print shown."
+kapwing,starting_price_alt_usd,https://www.kapwing.com/pricing,raw8/kapwing_pricing_2026-10-16.txt,"Pro | ""1,000 credits / month"" | ""$"" ""24"""
+kapwing,starting_price_alt_billing,https://www.kapwing.com/pricing,raw8/kapwing_pricing_2026-10-16.txt,OTHER VIEW (Monthly)
 kapwing,free_plan,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,Free: For anyone who wants to get started creating and repurposing content. 10 credits. $0.
 kapwing,free_plan_limits,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,Free: For anyone who wants to get started creating and repurposing content. 10 credits.
 kapwing,free_plan_limits,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,Export videos up to 4 minutes long
@@ -112,11 +116,12 @@ descript,description,https://www.descript.com/pricing,descript_pricing.txt,"Mult
 descript,description,https://www.descript.com/pricing,descript_pricing.txt,"AI tools including Studio Sound, Remove Filler Words, Create Clips"
 descript,description,https://www.descript.com/pricing,descript_pricing.txt,400 AI credits / month
 descript,starting_price_plan,https://www.descript.com/pricing,raw2/descript_pricing_rendered.txt,Hobbyist: Annual $16 / Monthly $24
-descript,starting_price_usd,https://www.descript.com/pricing,raw2/descript_pricing_rendered.txt,"Hobbyist: Annual $16 / Monthly $24 ""per person / month"""
-descript,starting_price_billing,https://www.descript.com/pricing,raw2/descript_pricing_rendered.txt,Monthly $24
-descript,price_unit,https://www.descript.com/pricing,raw2/descript_pricing_rendered.txt,"""per person / month"""
-descript,starting_price_alt_usd,https://www.descript.com/pricing,raw2/descript_pricing_rendered.txt,"Hobbyist: Annual $16 / Monthly $24 ""per person / month"""
-descript,starting_price_alt_billing,https://www.descript.com/pricing,raw2/descript_pricing_rendered.txt,Annual $16
+descript,starting_price_usd,https://www.descript.com/pricing,raw8/descript_pricing_2026-10-16.txt,"Hobbyist | ""$16"" | ""per person / month"" | ""1 person included"" | ""10 media hours / month"""
+descript,starting_price_billing,https://www.descript.com/pricing,raw8/descript_pricing_2026-10-16.txt,DEFAULT VIEW (Annual)
+descript,starting_price_billing,https://www.descript.com/pricing,raw8/descript_pricing_2026-10-16.txt,"toggle subtext: ""Saving up to 35% over monthly plan"""
+descript,price_unit,https://www.descript.com/pricing,raw8/descript_pricing_2026-10-16.txt,"""per person / month"""
+descript,starting_price_alt_usd,https://www.descript.com/pricing,raw8/descript_pricing_2026-10-16.txt,"Hobbyist | ""$24"" | ""per person / month"""
+descript,starting_price_alt_billing,https://www.descript.com/pricing,raw8/descript_pricing_2026-10-16.txt,OTHER VIEW (Monthly)
 descript,free_plan,https://www.descript.com/pricing,descript_pricing.txt,Free $0 Get started on your creative journey with text-based editing and give our AI tools a spin.
 descript,free_plan_limits,https://www.descript.com/pricing,descript_pricing.txt,Media minutes (per editor) Number of minutes of imported or recorded media processed in Descript included in your plan per editor. 60 minutes (1 hr) / month
 descript,free_plan_limits,https://www.descript.com/pricing,descript_pricing.txt,Video export (local) resolution 720p 1080p 4k 4k
@@ -142,12 +147,13 @@ heygen,description,https://www.heygen.com/pricing,heygen_pricing.txt,1 Custom Vi
 heygen,description,https://www.heygen.com/pricing,heygen_pricing.txt,Voice Cloning
 heygen,description,https://www.heygen.com/pricing,heygen_pricing.txt,Edit & proofread translation script
 heygen,starting_price_plan,https://www.heygen.com/pricing,raw2/heygen_pricing_rendered.txt,Creator (toggle Monthly|Yearly)
-heygen,starting_price_usd,https://www.heygen.com/pricing,raw2/heygen_pricing_rendered.txt,"MONTHLY ""$29 / mo"""
-heygen,starting_price_billing,https://www.heygen.com/pricing,raw2/heygen_pricing_rendered.txt,"MONTHLY ""$29 / mo"""
-heygen,price_unit,https://www.heygen.com/pricing,raw2/heygen_pricing_rendered.txt,"MONTHLY ""$29 / mo"""
+heygen,starting_price_usd,https://www.heygen.com/pricing,raw8/heygen_pricing_2026-10-16.txt,"Creator | ""$29 / mo"" | (no billed line) | ""600 credits"""
+heygen,starting_price_billing,https://www.heygen.com/pricing,raw8/heygen_pricing_2026-10-16.txt,DEFAULT VIEW (Monthly)
+heygen,price_unit,https://www.heygen.com/pricing,raw8/heygen_pricing_2026-10-16.txt,"Creator | ""$29 / mo"""
 heygen,price_unit,https://www.heygen.com/pricing,raw2/heygen_pricing_rendered.txt,User seats 1/1/1
-heygen,starting_price_alt_usd,https://www.heygen.com/pricing,raw2/heygen_pricing_rendered.txt,"YEARLY ""$24 / mo$29"""
-heygen,starting_price_alt_billing,https://www.heygen.com/pricing,raw2/heygen_pricing_rendered.txt,"YEARLY ""$24 / mo$29"" ""$288 billed yearly"""
+heygen,starting_price_alt_usd,https://www.heygen.com/pricing,raw8/heygen_pricing_2026-10-16.txt,"Creator | ""$24 / mo$29"" ($29 struck) | ""$288 billed yearly"" | ""600 credits"""
+heygen,starting_price_alt_billing,https://www.heygen.com/pricing,raw8/heygen_pricing_2026-10-16.txt,OTHER VIEW (Yearly)
+heygen,starting_price_alt_billing,https://www.heygen.com/pricing,raw8/heygen_pricing_2026-10-16.txt,"""$288 billed yearly"""
 heygen,free_plan,https://www.heygen.com/pricing,heygen_pricing.txt,"You can try HeyGen for free, no credit card required. The Free plan includes up to 3 videos per month"
 heygen,free_plan_limits,https://www.heygen.com/pricing,heygen_pricing.txt,Video Generation: 3 videos per month
 heygen,free_plan_limits,https://www.heygen.com/pricing,heygen_pricing.txt,Videos up to 1 min
@@ -174,12 +180,14 @@ synthesia,description,https://www.synthesia.io/pricing,synthesia_pricing.txt,240
 synthesia,description,https://www.synthesia.io/pricing,synthesia_pricing.txt,5 Personal Avatars
 synthesia,description,https://www.synthesia.io/pricing,synthesia_pricing.txt,AI Video Dubbing Dub videos in any language
 synthesia,starting_price_plan,https://www.synthesia.io/pricing,raw2/synthesia_pricing_rendered.txt,"Starter: YEARLY ""$19Billed yearly. $14 per month"""
-synthesia,starting_price_usd,https://www.synthesia.io/pricing,raw2/synthesia_pricing_rendered.txt,Billed monthly. $19 per month
-synthesia,starting_price_billing,https://www.synthesia.io/pricing,raw2/synthesia_pricing_rendered.txt,Billed monthly. $19 per month
-synthesia,price_unit,https://www.synthesia.io/pricing,raw2/synthesia_pricing_rendered.txt,Billed monthly. $19 per month
+synthesia,starting_price_usd,https://www.synthesia.io/pricing,raw8/synthesia_pricing_2026-10-16.txt,"""$14 per month"" | ""15,000 CREDITS / YEAR"""
+synthesia,starting_price_billing,https://www.synthesia.io/pricing,raw8/synthesia_pricing_2026-10-16.txt,DEFAULT VIEW (Yearly)
+synthesia,starting_price_billing,https://www.synthesia.io/pricing,raw8/synthesia_pricing_2026-10-16.txt,"compare table: ""$14/mo"" ""billed yearly"""
+synthesia,price_unit,https://www.synthesia.io/pricing,raw8/synthesia_pricing_2026-10-16.txt,"""$14 per month"""
 synthesia,price_unit,https://www.synthesia.io/pricing,raw2/synthesia_pricing_rendered.txt,"Seats: 1 editor | 1 editor, 3 guests"
-synthesia,starting_price_alt_usd,https://www.synthesia.io/pricing,raw2/synthesia_pricing_rendered.txt,"YEARLY ""$19Billed yearly. $14 per month"""
-synthesia,starting_price_alt_billing,https://www.synthesia.io/pricing,raw2/synthesia_pricing_rendered.txt,"YEARLY ""$19Billed yearly. $14 per month"""
+synthesia,starting_price_alt_usd,https://www.synthesia.io/pricing,raw8/synthesia_pricing_2026-10-16.txt,"Starter | ""Billed monthly."" | ""$19 per month"" | ""1,250 CREDITS / MONTH"""
+synthesia,starting_price_alt_billing,https://www.synthesia.io/pricing,raw8/synthesia_pricing_2026-10-16.txt,OTHER VIEW (Monthly)
+synthesia,starting_price_alt_billing,https://www.synthesia.io/pricing,raw8/synthesia_pricing_2026-10-16.txt,"table ""$19/mo"" ""billed monthly"""
 synthesia,free_plan,https://www.synthesia.io/pricing,synthesia_pricing.txt,"Yes. The Basic plan is free and includes 10 minutes of video, 3 survey responses and 500 credits every month, renewing each month."
 synthesia,free_plan_limits,https://www.synthesia.io/pricing,synthesia_pricing.txt,Basic $ 0 per month 500 credits / month
 synthesia,free_plan_limits,https://www.synthesia.io/pricing,synthesia_pricing.txt,The free allowance includes 10 minutes of video a month.
@@ -202,12 +210,14 @@ pictory,description,https://pictory.ai/pricing/,pictory_pricing.txt,Idea to Vide
 pictory,description,https://pictory.ai/pricing/,pictory_pricing.txt,Automatically make your videos accessible with auto captions.
 pictory,description,https://pictory.ai/pricing/,pictory_pricing.txt,Edit video recordings easily using text
 pictory,starting_price_plan,https://pictory.ai/pricing/,raw2/pictory_pricing_rendered.txt,Starter (For creators starting their video journey)
-pictory,starting_price_usd,https://pictory.ai/pricing/,raw2/pictory_pricing_rendered.txt,"MONTHLY (toggle off) ""$29 per month"""
-pictory,starting_price_billing,https://pictory.ai/pricing/,raw2/pictory_pricing_rendered.txt,"MONTHLY (toggle off) ""$29 per month"""
-pictory,price_unit,https://pictory.ai/pricing/,raw2/pictory_pricing_rendered.txt,"MONTHLY (toggle off) ""$29 per month"""
+pictory,starting_price_usd,https://pictory.ai/pricing/,raw8/pictory_pricing_2026-10-16.txt,"Starter | ""$25 $29"" ($29 struck) | ""per month, billed annually"" | ""2,400 minutes yr"""
+pictory,starting_price_billing,https://pictory.ai/pricing/,raw8/pictory_pricing_2026-10-16.txt,DEFAULT VIEW (Annual)
+pictory,starting_price_billing,https://pictory.ai/pricing/,raw8/pictory_pricing_2026-10-16.txt,"""per month, billed annually"""
+pictory,price_unit,https://pictory.ai/pricing/,raw8/pictory_pricing_2026-10-16.txt,"""per month, billed annually"""
 pictory,price_unit,https://pictory.ai/pricing/,raw2/pictory_pricing_rendered.txt,1 User
-pictory,starting_price_alt_usd,https://pictory.ai/pricing/,raw2/pictory_pricing_rendered.txt,"ANNUAL ""$25 $29 per month, billed annually"""
-pictory,starting_price_alt_billing,https://pictory.ai/pricing/,raw2/pictory_pricing_rendered.txt,"ANNUAL ""$25 $29 per month, billed annually"""
+pictory,starting_price_alt_usd,https://pictory.ai/pricing/,raw8/pictory_pricing_2026-10-16.txt,"Starter | ""$29"" | ""per month"" | ""200 video minutes"""
+pictory,starting_price_alt_billing,https://pictory.ai/pricing/,raw8/pictory_pricing_2026-10-16.txt,"OTHER VIEW (Monthly, switch off)"
+pictory,starting_price_alt_billing,https://pictory.ai/pricing/,raw8/pictory_pricing_2026-10-16.txt,"""$29"" | ""per month"""
 pictory,free_plan,https://pictory.ai/pricing/,pictory_pricing.txt,We also offer a 14-day trial to ensure you chose the best subscription for your needs.
 pictory,free_plan,https://pictory.ai/pricing/,pictory_pricing.txt,"With our free trial, you can create 3 video projects"
 pictory,free_plan_limits,https://pictory.ai/pricing/,pictory_pricing.txt,We also offer a 14-day trial
@@ -258,11 +268,13 @@ zebracat,description,https://www.zebracat.ai/pricing,zebracat_pricing.txt,Use av
 zebracat,description,https://www.zebracat.ai/pricing,zebracat_pricing.txt,Generative AI Credits 350 / mo
 zebracat,description,https://www.zebracat.ai/pricing,zebracat_pricing.txt,Basic stock clips & music
 zebracat,starting_price_plan,https://www.zebracat.ai/pricing,raw2/zebracat_pricing_rendered.txt,Cat Mode: YEARLY
-zebracat,starting_price_usd,https://www.zebracat.ai/pricing,raw2/zebracat_pricing_rendered.txt,$39/mo Billed monthly
-zebracat,starting_price_billing,https://www.zebracat.ai/pricing,raw2/zebracat_pricing_rendered.txt,$39/mo Billed monthly
-zebracat,price_unit,https://www.zebracat.ai/pricing,raw2/zebracat_pricing_rendered.txt,"MONTHLY ""$39/mo Billed monthly"""
-zebracat,starting_price_alt_usd,https://www.zebracat.ai/pricing,raw2/zebracat_pricing_rendered.txt,$39 $23/mo Billed yearly
-zebracat,starting_price_alt_billing,https://www.zebracat.ai/pricing,raw2/zebracat_pricing_rendered.txt,$39 $23/mo Billed yearly
+zebracat,starting_price_usd,https://www.zebracat.ai/pricing,raw8/zebracat_pricing_2026-10-16.txt,"Cat Mode | ""$39 $23/mo"" ($39 struck) | ""Billed yearly"" | ""15 videos / mo"""
+zebracat,starting_price_billing,https://www.zebracat.ai/pricing,raw8/zebracat_pricing_2026-10-16.txt,DEFAULT VIEW (Yearly)
+zebracat,starting_price_billing,https://www.zebracat.ai/pricing,raw8/zebracat_pricing_2026-10-16.txt,"""Billed yearly"""
+zebracat,price_unit,https://www.zebracat.ai/pricing,raw8/zebracat_pricing_2026-10-16.txt,"""$39 $23/mo"""
+zebracat,starting_price_alt_usd,https://www.zebracat.ai/pricing,raw8/zebracat_pricing_2026-10-16.txt,"Cat Mode | ""$39/mo"" | ""Billed monthly"" | ""15 videos / mo"""
+zebracat,starting_price_alt_billing,https://www.zebracat.ai/pricing,raw8/zebracat_pricing_2026-10-16.txt,OTHER VIEW (Monthly)
+zebracat,starting_price_alt_billing,https://www.zebracat.ai/pricing,raw8/zebracat_pricing_2026-10-16.txt,"""Billed monthly"""
 zebracat,free_plan,https://www.zebracat.ai/pricing,zebracat_pricing.txt,Our free plan allows you to create up to 5 videos with standard AI voices in 720p quality
 zebracat,free_plan,https://www.zebracat.ai/pricing,zebracat_pricing.txt,No credit card is required to sign up for the free plan.
 zebracat,free_plan_limits,https://www.zebracat.ai/pricing,zebracat_pricing.txt,up to 5 videos
@@ -276,3 +288,80 @@ zebracat,commercial_use_paid,https://www.zebracat.ai/pricing,raw2/zebracat_prici
 zebracat,commercial_use_free,https://www.zebracat.ai/pricing,raw2/zebracat_pricing_rendered.txt,"""Commercial Rights"" row (check marks not in text)"
 zebracat,terms_url,https://www.zebracat.ai/terms-and-conditions,zebracat_terms.txt,Terms and Conditions | Zebracat AI
 zebracat,terms_date_shown,https://www.zebracat.ai/terms-and-conditions,zebracat_terms.txt,"(UNVERIFIED: page checked, answer not present in retrieved text)"
+fliki,score:output_quality,https://fliki.ai/pricing,raw2/fliki_pricing_rendered.txt,Full HD - 1080p videos; Videos upto 15 minutes
+fliki,score:price_value,https://fliki.ai/pricing,raw8/fliki_pricing_2026-10-16.txt,"Standard | ""$28 $21"" ($28 struck) | ""per user / month · $252 billed annually"" | ""2160 credits per year"""
+fliki,score:price_value,https://fliki.ai/pricing,raw8/fliki_pricing_2026-10-16.txt,"Standard | ""$28"" | ""per user / month · No commitment, cancel anytime"" | ""180 credits per month"""
+fliki,score:free_tier,https://fliki.ai/pricing,raw2/fliki_pricing_rendered.txt,Includes Fliki watermark
+fliki,score:fit,https://fliki.ai/,raw5/fliki_home_2026-10-16.txt,"Upload a product photo and pick a look, and Fliki writes the copy and designs ready-to-run ads"
+fliki,score:fit,https://fliki.ai/,raw5/fliki_home_2026-10-16.txt,"AI voiceover, stock or AI-generated visuals, and auto-captions"
+fliki,score:fit,https://fliki.ai/pricing,raw2/fliki_pricing_rendered.txt,"Yes, with our subscription plans you get a commercial license to all the content you create."
+fliki,score:update_pace,https://fliki.ai/whats-new,raw7/fliki_whatsnew_2026-10-16.txt,"Video podcast maker Oct 9, 2026"
+fliki,score:update_pace,https://fliki.ai/whats-new,raw7/fliki_whatsnew_2026-10-16.txt,"Directed voiceover Oct 7, 2026"
+fliki,score:update_pace,https://fliki.ai/whats-new,raw7/fliki_whatsnew_2026-10-16.txt,"Social carousel maker v2 Sep 28, 2026"
+invideo-ai,score:price_value,https://invideo.io/pricing,raw8/invideo-ai_pricing_2026-10-16.txt,"STARTER | ""400 credits/mo."" | ""$20"" (struck) ""$10"" | ""per seat/mo, billed annually"""
+invideo-ai,score:price_value,https://invideo.io/pricing,raw8/invideo-ai_pricing_2026-10-16.txt,"STARTER | ""400 credits/mo."" | ""$20"" | ""per seat/mo, billed monthly"""
+invideo-ai,score:ease_of_use,https://invideo.io/,raw5/invideo_home_2026-10-16.txt,The agentic video editor for serious creatives
+invideo-ai,score:ease_of_use,https://invideo.io/templates/,raw5/invideo_templates_2026-10-16.txt,Explore Unlimited invideo Templates!
+invideo-ai,score:fit,https://invideo.io/,raw5/invideo_home_2026-10-16.txt,Upload footage to your first project
+invideo-ai,score:fit,https://invideo.io/terms-and-conditions/,invideo_terms.txt,"We also grant you a perpetual, irrevocable, worldwide, royalty-free, non-exclusive licence to use, reproduce, modify, distribute, perform, display and commercialise Outputs you generate through the Services."
+veed,score:price_value,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,"Creator $147 per user / year, 6,000 Credits · ~1,500 AI Videos"
+veed,score:price_value,https://www.veed.io/pricing,raw7/veed_pricing_2026-10-16b.txt,"Creator $25 per user / month, 500 Credits · ~125 AI Videos"
+kapwing,score:output_quality,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,Export content in 4K resolution; Create and edit unlimited projects; Export projects up to 2 hours long
+kapwing,score:price_value,https://www.kapwing.com/pricing,raw8/kapwing_pricing_2026-10-16.txt,"Pro | ""1,000 credits / month"" | ""$"" ""16"""
+kapwing,score:price_value,https://www.kapwing.com/pricing,raw8/kapwing_pricing_2026-10-16.txt,"Toggle: ""BILLING"" / ""Monthly"" / ""Annual"" / ""SAVE 33%"""
+kapwing,score:price_value,https://www.kapwing.com/pricing,raw8/kapwing_pricing_2026-10-16.txt,"Pro | ""1,000 credits / month"" | ""$"" ""24"""
+kapwing,score:ease_of_use,https://www.kapwing.com/,raw5/kapwing_home_2026-10-16.txt,"Video Editor Edit video clips, combine tracks together, and add effects all in one place"
+kapwing,score:ease_of_use,https://www.kapwing.com/templates,raw5/kapwing_templates_2026-10-16.txt,Free Templates — Customizable And Online — Kapwing
+kapwing,score:free_tier,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,Unlimited exports with a watermark
+kapwing,score:fit,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,Upload files up to 6 GB
+kapwing,score:fit,https://www.kapwing.com/pricing,raw2/kapwing_pricing_rendered.txt,"Auto-subtitling (up to 1,000 mins / month)"
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Release Notes - August 2026
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Release Notes - Kapwing MCP
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Release Notes - June 2026
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Release Notes - July 2026
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Release Notes - May 2026
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Release Notes - April 2026
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Release Notes - March 2026
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Release Notes - February 2026
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Kapwing January 2026 Release Notes
+kapwing,score:update_pace,https://www.kapwing.com/help/tag/release-notes/,raw7/kapwing_notes_2026-10-16b.txt,Kapwing December 2025 Release Notes
+descript,score:price_value,https://www.descript.com/pricing,raw8/descript_pricing_2026-10-16.txt,"Hobbyist | ""$16"" | ""per person / month"" | ""1 person included"" | ""10 media hours / month"""
+descript,score:price_value,https://www.descript.com/pricing,raw8/descript_pricing_2026-10-16.txt,"Hobbyist | ""$24"" | ""per person / month"""
+descript,score:ease_of_use,https://www.descript.com/,raw5/descript_home_2026-10-16.txt,Editing video in Descript is as easy as using docs and slides.
+descript,score:ease_of_use,https://www.descript.com/templates,raw5/descript_templates_2026-10-16.txt,Free AI Video Templates - Made in Descript
+descript,score:free_tier,https://www.descript.com/pricing,raw2/descript_pricing_rendered.txt,Media minutes 60 minutes (1 hr) / month
+descript,score:update_pace,https://descript.canny.io/changelog,raw5/descript_changelog_2026-10-16.txt,"Release roundup—October 12, 2026"
+descript,score:update_pace,https://descript.canny.io/changelog,raw5/descript_changelog_2026-10-16.txt,"Release roundup—September 17, 2026"
+heygen,score:output_quality,https://www.heygen.com/pricing,raw2/heygen_pricing_rendered.txt,Videos up to 30 mins; 1080p video export
+heygen,score:price_value,https://www.heygen.com/pricing,raw8/heygen_pricing_2026-10-16.txt,"Creator | ""$29 / mo"" | (no billed line) | ""600 credits"""
+heygen,score:price_value,https://www.heygen.com/pricing,raw8/heygen_pricing_2026-10-16.txt,"Creator | ""$24 / mo$29"" ($29 struck) | ""$288 billed yearly"" | ""600 credits"""
+heygen,score:free_tier,https://www.heygen.com/pricing,raw2/heygen_pricing_rendered.txt,3 videos per month; Videos up to 1 min
+heygen,score:fit,https://www.heygen.com/,raw5/heygen_home_2026-10-16.txt,Upload a short clip or reference image
+heygen,score:fit,https://www.heygen.com/,raw5/heygen_home_2026-10-16.txt,"Brand Kit, auto captions, and B-roll deliver finished videos"
+heygen,score:fit,https://www.heygen.com/terms,heygen_terms.txt,does not restrict your ability to use User Output for your own purposes (including for commercial purposes)
+heygen,score:update_pace,https://www.heygen.com/blog,raw5/heygen_blog_2026-10-16.txt,"Product Updates Published August 11th, 2026 Introducing HeyGen for Real Estate"
+synthesia,score:price_value,https://www.synthesia.io/pricing,raw8/synthesia_pricing_2026-10-16.txt,"""$14 per month"" | ""15,000 CREDITS / YEAR"""
+synthesia,score:price_value,https://www.synthesia.io/pricing,raw8/synthesia_pricing_2026-10-16.txt,"Starter | ""Billed monthly."" | ""$19 per month"" | ""1,250 CREDITS / MONTH"""
+synthesia,score:free_tier,https://www.synthesia.io/pricing,raw2/synthesia_pricing_rendered.txt,Videos carry a Synthesia watermark
+synthesia,score:update_pace,https://www.synthesia.io/updates,raw5/synthesia_updates_2026-10-16.txt,"Add burned-in captions to dubbed videos in one click, so your localized content stays accessible and easy to follow, even with sound off. 9/30/2026"
+synthesia,score:update_pace,https://www.synthesia.io/updates,raw5/synthesia_updates_2026-10-16.txt,"Upload WebP images to your videos Bring WebP files straight into the editor—use still or animated WebP on the canvas, keep transparency, and skip manual file conversions. 9/29/2026"
+pictory,score:price_value,https://pictory.ai/pricing,raw8/pictory_pricing_2026-10-16.txt,"Starter | ""$25 $29"" ($29 struck) | ""per month, billed annually"" | ""2,400 minutes yr"""
+pictory,score:price_value,https://pictory.ai/pricing,raw8/pictory_pricing_2026-10-16.txt,"Starter | ""$29"" | ""per month"" | ""200 video minutes"""
+pictory,score:ease_of_use,https://pictory.ai/,raw5/pictory_home_2026-10-16.txt,Edit videos faster with Gen AI-powered video editing
+pictory,score:ease_of_use,https://pictory.ai/templates,raw5/pictory_templates_2026-10-16.txt,"Video Templates, search to find a template that suits your needs."
+pictory,score:free_tier,https://pictory.ai/pricing,pictory_pricing.txt,"With our free trial, you can create 3 video projects"
+pictory,score:free_tier,https://pictory.ai/pricing,raw4/pictory_pricing_live.txt,"""Start Free 14-day Trial"""
+pictory,score:fit,https://pictory.ai/,raw5/pictory_home_2026-10-16.txt,automatic captions
+pictory,score:fit,https://pictory.ai/templates,raw5/pictory_templates_2026-10-16.txt,Portrait - 9:16
+opusclip,score:price_value,https://www.opus.pro/pricing,raw8/opusclip_pricing_2026-10-16.txt,"Starter | ""$15 USD/mo"" | ""Starter plan only available in monthly"" | ""$15 billed monthly "" | ""150 credits "" "" per month"""
+opusclip,score:free_tier,https://www.opus.pro/pricing,raw2/opus_pricing_rendered.txt,"""Has watermark"""
+opusclip,score:fit,https://www.opus.pro/,raw5/opus_home_2026-10-16.txt,Or upload videos after signing up
+opusclip,score:fit,https://www.opus.pro/,raw5/opus_home_2026-10-16.txt,OpusClip automatically adds captions for you with over 97% accuracy!
+opusclip,score:fit,https://www.opus.pro/pricing,raw2/opus_pricing_rendered.txt,"Various aspect ratios 9:16 | 9:16 | 9:16, 1:1, 16:9"
+opusclip,score:fit,https://www.opus.pro/terms-of-service,opus_terms.txt,"if you are a user of Paid Services, you are licensed to use the Services for commercial uses"
+opusclip,score:fit,https://www.opus.pro/,raw5/opus_home_2026-10-16.txt,Advertisers Create high-performing ad creatives at scale
+zebracat,score:output_quality,https://www.zebracat.ai/pricing,raw2/zebracat_pricing_rendered.txt,Compare (Cat Mode/Super Cat/Unlimited Cat/Enterprise): Videos per Month 15/40/Unlimited/Unlimited; Video Length Limit 2 min/5 min/5 min/5 min; Free Edits per video 3/3/5/Unlimited; Export Resolution 1080p all
+zebracat,score:price_value,https://www.zebracat.ai/pricing,raw8/zebracat_pricing_2026-10-16.txt,"Cat Mode | ""$39 $23/mo"" ($39 struck) | ""Billed yearly"" | ""15 videos / mo"""
+zebracat,score:price_value,https://www.zebracat.ai/pricing,raw8/zebracat_pricing_2026-10-16.txt,"Cat Mode | ""$39/mo"" | ""Billed monthly"" | ""15 videos / mo"""
+zebracat,score:fit,https://www.zebracat.ai/,raw5/zebracat_home_2026-10-16.txt,Upload one photo and get a finished video back
+zebracat,score:fit,https://www.zebracat.ai/,raw5/zebracat_home_2026-10-16.txt,Add accurate captions to every video automatically

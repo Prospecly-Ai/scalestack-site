@@ -1,11 +1,12 @@
 # ScaleStack Tech
 
-ScaleStack Tech is a feed of real AI use cases for businesses, plus draft rankings of AI video makers. Every use case is summarised in our own words from one public source page that we read, and links to it with the reporter's name and the date shown on the page. Source accounts are often vendors' own case studies, so they are labelled "reported by". Results figures from sources are left out. The video maker research is Desk-researched: we read public vendor pages and have not run the tools. A value we could not confirm from a public page is shown as UNVERIFIED.
+ScaleStack Tech is a directory of AI video makers read from public vendor pages, a feed of real AI use cases for businesses, and draft rankings of AI video makers. Every use case is summarised in our own words from one public source page that we read, and links to it with the reporter's name and the date shown on the page. Source accounts are often vendors' own case studies, so they are labelled "reported by". Results figures from sources are left out. The video maker research is Desk-researched: we read public vendor pages and have not run the tools. A value we could not confirm from a public page is shown as UNVERIFIED.
 
 The AI video makers ranking is a draft until every score is checked, and it is marked DRAFT on the page.
 
 ## Key pages
-- Home (use case feed): https://scalestacktech.co/
+- Home (AI video maker directory): https://scalestacktech.co/
+- Use case feed: https://scalestacktech.co/use-cases/
 - Use cases by category: https://scalestacktech.co/use-cases/sales-lead-follow-up/ , https://scalestacktech.co/use-cases/marketing-video/ , https://scalestacktech.co/use-cases/operations-admin/ , https://scalestacktech.co/use-cases/customer-support/ , https://scalestacktech.co/use-cases/crm-ghl-snapshots/
 - Methodology (how we pick use cases; criteria, weights, 0/3/5 anchors, UNVERIFIED rule): https://scalestacktech.co/methodology/
 - Rankings (draft): https://scalestacktech.co/rankings/
